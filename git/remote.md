@@ -32,13 +32,13 @@ git commit -m "docs: начальная версия документации Gi
 **HTTPS:**
 
 ```bash
-git remote add origin https://github.com/ВАШ_ЛОГИН/GitBook.git
+git remote add origin https://github.com/AleksanderKhatkov9/GitBook.git
 ```
 
 **SSH (рекомендуется):**
 
 ```bash
-git remote add origin git@github.com:ВАШ_ЛОГИН/GitBook.git
+git remote add origin git@github.com:AleksanderKhatkov9/GitBook.git
 ```
 
 Проверка:
@@ -56,7 +56,7 @@ git push -u origin main
 После этого проект на GitHub. Клонирование на другом ПК:
 
 ```bash
-git clone git@github.com:ВАШ_ЛОГИН/GitBook.git
+git clone git@github.com:AleksanderKhatkov9/GitBook.git
 cd GitBook
 npm install
 npm run serve

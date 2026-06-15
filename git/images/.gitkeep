@@ -1,0 +1,13 @@
+# Папка для изображений раздела Git
+
+Положите сюда картинки и подключайте в `.md` так:
+
+```markdown
+![Описание](images/имя-файла.png)
+```
+
+Пример: `git/images/pr-example.png` → в `pull-request.md`:
+
+```markdown
+![Создание PR](images/pr-example.png)
+```

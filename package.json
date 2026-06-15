@@ -1,0 +1,13 @@
+{
+  "name": "gitbook",
+  "private": true,
+  "scripts": {
+    "init": "honkit init",
+    "serve": "honkit serve",
+    "build": "honkit build"
+  },
+  "devDependencies": {
+    "gitbook-plugin-collapsible-chapters": "^0.1.8",
+    "honkit": "^6.2.2"
+  }
+}

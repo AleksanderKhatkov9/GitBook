@@ -1,0 +1,86 @@
+# Введение
+
+Локальная документация по веб-разработке, собранная с помощью [HonKit](https://github.com/honkit/honkit).
+
+Официальная документация GitBook: [@gitbook-ng/gitbook](https://gitbook-ng.github.io/)
+
+Все страницы пишутся в **Markdown** (`.md`). HTML в папке `_book/` генерируется автоматически — **не редактируйте** её вручную.
+
+## Быстрый старт
+
+```bash
+npm install
+npm run serve
+```
+
+Книга откроется: **http://localhost:4000**
+
+Подробнее: [Установка GitBook](gitbook/installation.md)
+
+---
+
+## Разделы документации
+
+| Раздел | Описание |
+|--------|----------|
+| [GitBook](gitbook/README.md) | Установка, создание страниц, меню |
+| [PHP](php/README.md) | PHP → [Laravel](laravel/README.md) |
+| [JS](js/README.md) | [Vue](js/vue/README.md), [React](js/react/README.md), [Next.js](js/next/README.md) |
+| [MySQL](mysql/README.md) | База данных MySQL |
+| [Admin](admin/README.md) | [Nova](admin/nova/README.md), [Moonshine](admin/moonshine/README.md), [AdminLTE](admin/adminlte/README.md) |
+| [CSS](css/README.md) | Стили и CSS-фреймворки |
+| [DevOps](devops/README.md) | [Docker](devops/docker/README.md), [Vagrant](devops/vagrant/README.md) |
+| [Linux](linux/README.md) | Команды и администрирование |
+| [Git](git/README.md) | Git, GitHub, ветки, команды |
+
+---
+
+## Структура проекта
+
+```
+GitBook/
+├── README.md              ← эта страница
+├── SUMMARY.md             ← оглавление (меню слева)
+├── book.json              ← плагины
+├── package.json           ← зависимости и команды
+│
+├── gitbook/               ← как работать с этой книгой
+├── php/                   ← PHP
+├── laravel/               ← Laravel (подраздел PHP)
+├── js/                    ← JavaScript
+│   ├── vue/
+│   ├── react/
+│   └── next/
+├── mysql/
+├── admin/
+│   ├── nova/
+│   ├── moonshine/
+│   └── adminlte/
+├── css/
+├── devops/
+│   ├── docker/
+│   └── vagrant/
+├── linux/
+├── git/
+│
+└── _book/                 ← сгенерированный HTML (не трогать!)
+```
+
+---
+
+## Как добавить страницу
+
+1. Создайте `.md` файл, например `laravel/middleware.md`
+2. Добавьте ссылку в `SUMMARY.md`
+3. Сохраните — при `npm run serve` страница обновится автоматически
+
+Подробнее: [Страницы и меню](gitbook/pages.md)
+
+---
+
+## Полезные команды
+
+| Команда | Описание |
+|---------|----------|
+| `npm run serve` | Локальный просмотр с автообновлением |
+| `npm run build` | Сборка сайта в `_book/` для публикации |

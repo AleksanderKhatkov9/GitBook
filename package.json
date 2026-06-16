@@ -3,6 +3,9 @@
   "private": true,
   "scripts": {
     "init": "honkit init",
+    "postinstall": "node scripts/patch-honkit-serve.js",
+    "prebuild": "node scripts/patch-honkit-serve.js",
+    "preserve": "node scripts/patch-honkit-serve.js",
     "serve": "honkit serve",
     "build": "honkit build"
   },

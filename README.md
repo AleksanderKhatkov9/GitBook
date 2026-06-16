@@ -29,9 +29,25 @@ npm run serve
 | [MySQL](mysql/README.md) | База данных MySQL |
 | [Admin](admin/README.md) | [Nova](admin/nova/README.md), [Moonshine](admin/moonshine/README.md), [AdminLTE](admin/adminlte/README.md) |
 | [CSS](css/README.md) | Стили и CSS-фреймворки |
-| [DevOps](devops/README.md) | [Docker](devops/docker/README.md), [Vagrant](devops/vagrant/README.md) |
-| [Linux](linux/README.md) | Команды и администрирование |
+| [DevOps](devops/README.md) | Docker, Vagrant, Nginx, Deployer, [Laravel + Next.js](devops/laravel-next/README.md) |
 | [Git](git/README.md) | Git, GitHub, ветки, команды |
+
+---
+
+## Развёртывание Laravel + Next.js
+
+Fullstack-проекты (Laravel API + Next.js frontend) на одном домене:
+
+| Компонент | Роль |
+|-----------|------|
+| **Next.js** | Frontend, точка входа (`/`) |
+| **Laravel** | Backend, REST API (`/api`) |
+| **Nginx** | Прокси на Next.js + PHP-FPM для Laravel |
+| **PM2** | Запуск и перезапуск Next.js на сервере |
+
+Примеры проектов: `markitect.by`, `marketis.by`, `marketis.site`.
+
+Полная документация: **[Laravel + Next.js](devops/laravel-next/README.md)** — архитектура, `.env`, Nginx, PM2, сборка, Docker.
 
 ---
 
@@ -59,8 +75,11 @@ GitBook/
 ├── css/
 ├── devops/
 │   ├── docker/
-│   └── vagrant/
-├── linux/
+│   ├── vagrant/
+│   ├── linux/
+│   ├── nginx/
+│   ├── deployer/
+│   └── laravel-next/      ← Laravel + Next.js на одном домене
 ├── git/
 │
 └── _book/                 ← сгенерированный HTML (не трогать!)

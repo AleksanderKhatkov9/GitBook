@@ -20,3 +20,7 @@ npm run dev
 - Server Components и Client Components
 - API Routes
 - SSR, SSG, ISR
+
+## Деплой с Laravel
+
+Развёртывание Next.js вместе с Laravel API на одном домене (Nginx, PM2, production): [Laravel + Next.js](../../devops/laravel-next/README.md).

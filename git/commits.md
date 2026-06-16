@@ -154,7 +154,7 @@ feat: добавить разделы PHP, JS, DevOps
 
 Добавьте в `.gitignore` (если ещё нет):
 
-```gitignore
+```ini
 node_modules/
 _book/
 .DS_Store

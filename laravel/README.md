@@ -13,6 +13,7 @@ Laravel — веб-фреймворк на PHP с выразительным с�
 | [Структура проекта](structure.md) | Каталоги и ключевые файлы |
 | [Маршруты](routing.md) | `routes/web.php`, контроллеры |
 | [Представления](views.md) | Blade-шаблоны |
+| [Frontend](frontend.md) | Vue + Laravel, React + Laravel, Inertia |
 | [Eloquent ORM](eloquent.md) | Модели и запросы к БД |
 | [Test ORM](test.md) | Тестовая страница |
 

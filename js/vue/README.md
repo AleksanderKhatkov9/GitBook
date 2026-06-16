@@ -21,3 +21,7 @@ npm run dev
 - Реактивность (`ref`, `reactive`)
 - Vue Router — маршрутизация
 - Pinia — управление состоянием
+
+## Laravel
+
+Подключение Vue к Laravel (Inertia, Vite, API): [Frontend](../../laravel/frontend.md).

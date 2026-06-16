@@ -28,7 +28,7 @@ git push -u origin feature/user-profile
 
 Указывает Git, какие файлы **не отслеживать**:
 
-```gitignore
+```ini
 # Зависимости
 node_modules/
 vendor/

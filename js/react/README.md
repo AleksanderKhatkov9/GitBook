@@ -20,3 +20,7 @@ npm start
 - Хуки (`useState`, `useEffect`)
 - Props и состояние
 - React Router — маршрутизация
+
+## Laravel
+
+Подключение React к Laravel (Inertia, Vite, API): [Frontend](../../laravel/frontend.md).

@@ -1,42 +1,24 @@
 # MySQL
 
-> Официальная документация: [dev.mysql.com/doc](https://dev.mysql.com/doc/)
+> Официальная документация: [dev.mysql.com/doc](https://dev.mysql.com/doc/)  
+> Руководство (RU): [metanit.com/sql/mysql](https://metanit.com/sql/mysql/)
 
-MySQL — реляционная система управления базами данных.
+MySQL — реляционная СУБД. Данные хранятся в таблицах; связи между таблицами задаются через ключи.
 
-## Установка (Windows)
+## Разделы
 
-Скачайте [MySQL Installer](https://dev.mysql.com/downloads/installer/) или используйте [Laravel Herd Pro](https://herd.laravel.com/) / [DBngin](https://dbngin.com/).
+| Глава | Описание |
+|-------|----------|
+| [1. Введение](introduction.md) | Установка, клиенты, подключение |
+| [2. Структура данных](structure.md) | Базы, таблицы, типы, внешние ключи |
+| [3. Основные операции](crud.md) | INSERT, SELECT, UPDATE, DELETE |
+| [4. Запросы](queries.md) | Фильтры, сортировка, агрегаты, подзапросы, транзакции |
+| [5. Соединение таблиц](joins.md) | JOIN, UNION |
+| [6. Встроенные функции](functions.md) | Строки, числа, даты, CASE, IF |
 
-## Подключение
+## Laravel
 
-```bash
-mysql -u root -p
-```
-
-## Основные команды
-
-```sql
-SHOW DATABASES;
-CREATE DATABASE myapp;
-USE myapp;
-
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
-SELECT * FROM users;
-INSERT INTO users (name, email) VALUES ('Иван', 'ivan@example.com');
-UPDATE users SET name = 'Пётр' WHERE id = 1;
-DELETE FROM users WHERE id = 1;
-```
-
-## Подключение из Laravel
-
-В `.env`:
+Подключение и миграции: [Eloquent ORM](../laravel/eloquent.md), конфигурация в [configuration.md](../laravel/configuration.md).
 
 ```ini
 DB_CONNECTION=mysql
@@ -45,8 +27,4 @@ DB_PORT=3306
 DB_DATABASE=myapp
 DB_USERNAME=root
 DB_PASSWORD=
-```
-
-```bash
-php artisan migrate
 ```

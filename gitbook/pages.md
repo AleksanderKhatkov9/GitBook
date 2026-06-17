@@ -4,7 +4,7 @@
 
 ### Шаг 1 — создать `.md` файл
 
-Например, `laravel/middleware.md`:
+Например, `Backend/laravel/middleware.md`:
 
 ```markdown
 # Middleware
@@ -15,9 +15,11 @@ Middleware — промежуточный слой между запросом �
 ### Шаг 2 — добавить в `SUMMARY.md`
 
 ```markdown
-* [Laravel](laravel/README.md)
-  * [Установка](laravel/installation.md)
-  * [Middleware](laravel/middleware.md)   ← новая строка
+* [Backend](Backend/README.md)
+  * [PHP](Backend/php/README.md)
+    * [Laravel](Backend/laravel/README.md)
+      * [Установка](Backend/laravel/installation.md)
+      * [Middleware](Backend/laravel/middleware.md)   ← новая строка
 ```
 
 Формат: `* [Название в меню](путь/к/файлу.md)`
@@ -35,10 +37,12 @@ Middleware — промежуточный слой между запросом �
 Чтобы раздел можно было сворачивать в меню слева, используйте вложенный список:
 
 ```markdown
-* [Laravel](laravel/README.md)
-  * [Установка](laravel/installation.md)
-  * [Конфигурация](laravel/configuration.md)
-  * [Структура проекта](laravel/structure.md)
+* [Backend](Backend/README.md)
+  * [PHP](Backend/php/README.md)
+    * [Laravel](Backend/laravel/README.md)
+      * [Установка](Backend/laravel/installation.md)
+      * [Конфигурация](Backend/laravel/configuration.md)
+      * [Структура проекта](Backend/laravel/structure.md)
 ```
 
 Плагин `collapsible-chapters` в `book.json` добавляет стрелку — клик скроет или покажет подпункты.
@@ -52,7 +56,7 @@ Middleware — промежуточный слой между запросом �
 Создайте папку и главную страницу:
 
 ```
-php/
+Backend/php/
 ├── README.md
 └── basics.md
 ```
@@ -63,8 +67,9 @@ php/
 * [Введение](README.md)
 * [GitBook](gitbook/README.md)
   * ...
-* [PHP](php/README.md)
-  * [Основы](php/basics.md)
+* [Backend](Backend/README.md)
+  * [PHP](Backend/php/README.md)
+    * [Основы](Backend/php/basics.md)
 ```
 
 ---
@@ -74,13 +79,13 @@ php/
 Внутри Markdown:
 
 ```markdown
-См. раздел [Маршруты](../laravel/routing.md).
+См. раздел [Маршруты](../Backend/laravel/routing.md).
 ```
 
 Из корня книги:
 
 ```markdown
-[Установка Laravel](laravel/installation.md)
+[Установка Laravel](Backend/laravel/installation.md)
 ```
 
 ---

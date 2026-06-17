@@ -4,7 +4,7 @@
 
 Laravel отдаёт HTML через Blade, а интерактивный UI — через **JavaScript-фреймворк**. Сборка фронтенда выполняется **Vite** (встроен в Laravel с версии 9+).
 
-Связанные разделы: [Vue.js](../../js/vue/README.md), [React](../../js/react/README.md), [Представления](views.md), [Laravel + Next.js](../devops/laravel-next/README.md).
+Связанные разделы: [Vue.js](../../Web/js/vue/README.md), [React](../../Web/js/react/README.md), [Представления](views.md), [Laravel + Next.js](../../devops/laravel-next/README.md).
 
 ---
 
@@ -15,7 +15,7 @@ Laravel отдаёт HTML через Blade, а интерактивный UI —
 | **Inertia.js + Vue/React** | Один проект, без отдельного REST API. Рекомендуется для большинства приложений |
 | **Blade + Vite + компоненты** | Небольшие виджеты на JS внутри Blade-страниц |
 | **SPA + REST API** | Отдельный frontend (Vue/React/Next.js), Laravel только как API |
-| **Next.js + Laravel** | Fullstack на одном домене — см. [Laravel + Next.js](../devops/laravel-next/README.md) |
+| **Next.js + Laravel** | Fullstack на одном домене — см. [Laravel + Next.js](../../devops/laravel-next/README.md) |
 
 ---
 
@@ -328,7 +328,7 @@ useEffect(() => {
 }, []);
 ```
 
-> Для production с отдельным доменом фронтенда см. [Laravel + Next.js](../devops/laravel-next/README.md) — та же схема применима и к Vue/React SPA.
+> Для production с отдельным доменом фронтенда см. [Laravel + Next.js](../../devops/laravel-next/README.md) — та же схема применима и к Vue/React SPA.
 
 ---
 
@@ -350,5 +350,5 @@ useEffect(() => {
 - [Inertia.js — Laravel](https://inertiajs.com/server-side-setup)
 - [Vite — Laravel](https://laravel.com/docs/13.x/vite)
 - [Laravel Sanctum (SPA auth)](https://laravel.com/docs/13.x/sanctum)
-- [Vue.js](../../js/vue/README.md)
-- [React](../../js/react/README.md)
+- [Vue.js](../../Web/js/vue/README.md)
+- [React](../../Web/js/react/README.md)

@@ -24,4 +24,4 @@ npm run dev
 
 ## Laravel
 
-Подключение Vue к Laravel (Inertia, Vite, API): [Frontend](../../laravel/frontend.md).
+Подключение Vue к Laravel (Inertia, Vite, API): [Frontend](../../../Backend/laravel/frontend.md).

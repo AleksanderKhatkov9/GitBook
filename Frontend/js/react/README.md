@@ -23,4 +23,4 @@ npm start
 
 ## Laravel
 
-Подключение React к Laravel (Inertia, Vite, API): [Frontend](../../laravel/frontend.md).
+Подключение React к Laravel (Inertia, Vite, API): [Frontend](../../../Backend/laravel/frontend.md).

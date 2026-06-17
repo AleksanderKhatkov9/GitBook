@@ -47,6 +47,8 @@ services:
 docker compose up -d
 ```
 
+Подробный стек для Laravel (PHP-FPM, Nginx, MySQL, phpMyAdmin, Vite): [Laravel + Docker Compose](laravel-compose/README.md).
+
 ## Laravel Sail
 
 ```bash

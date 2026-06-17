@@ -24,12 +24,10 @@ npm run serve
 | Раздел | Описание |
 |--------|----------|
 | [GitBook](gitbook/README.md) | Установка, создание страниц, меню |
-| [PHP](php/README.md) | PHP → [Laravel](laravel/README.md) |
-| [JS](js/README.md) | [Vue](js/vue/README.md), [React](js/react/README.md), [Next.js](js/next/README.md) |
+| [Backend](Backend/README.md) | [PHP](Backend/php/README.md) → [Laravel](Backend/laravel/README.md), [Web](Web/README.md) (JS, CSS) |
 | [MySQL](mysql/README.md) | База данных MySQL |
 | [Admin](admin/README.md) | [Nova](admin/nova/README.md), [Moonshine](admin/moonshine/README.md), [AdminLTE](admin/adminlte/README.md) |
-| [CSS](css/README.md) | Стили и CSS-фреймворки |
-| [DevOps](devops/README.md) | Docker, Vagrant, Nginx, Deployer, [Laravel + Next.js](devops/laravel-next/README.md) |
+| [DevOps](devops/README.md) | Docker, [Laravel Compose](devops/docker/laravel-compose/README.md), Vagrant, Nginx, Deployer, [Laravel + Next.js](devops/laravel-next/README.md) |
 | [Git](git/README.md) | Git, GitHub, ветки, команды |
 
 ---
@@ -61,20 +59,23 @@ GitBook/
 ├── package.json           ← зависимости и команды
 │
 ├── gitbook/               ← как работать с этой книгой
-├── php/                   ← PHP
-├── laravel/               ← Laravel (подраздел PHP)
-├── js/                    ← JavaScript
-│   ├── vue/
-│   ├── react/
-│   └── next/
+├── Backend/               ← PHP, Laravel
+│   ├── php/
+│   └── laravel/
+├── Web/                   ← JavaScript и CSS (в меню — под Backend)
+│   ├── js/
+│   │   ├── vue/
+│   │   ├── react/
+│   │   └── next/
+│   └── css/
 ├── mysql/
 ├── admin/
 │   ├── nova/
 │   ├── moonshine/
 │   └── adminlte/
-├── css/
 ├── devops/
 │   ├── docker/
+│   │   └── laravel-compose/  ← Laravel + Nginx + MySQL + phpMyAdmin
 │   ├── vagrant/
 │   ├── linux/
 │   ├── nginx/
@@ -89,7 +90,7 @@ GitBook/
 
 ## Как добавить страницу
 
-1. Создайте `.md` файл, например `laravel/middleware.md`
+1. Создайте `.md` файл, например `Backend/laravel/middleware.md`
 2. Добавьте ссылку в `SUMMARY.md`
 3. Сохраните — при `npm run serve` страница обновится автоматически
 

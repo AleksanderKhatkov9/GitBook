@@ -7,6 +7,7 @@
 | Раздел | Описание |
 |--------|----------|
 | [Docker](docker/README.md) | Контейнеризация приложений |
+| [Laravel + Docker Compose](docker/laravel-compose/README.md) | PHP-FPM, Nginx, MySQL, phpMyAdmin, Vite |
 | [Vagrant](vagrant/README.md) | Виртуальные машины для разработки |
 | [Linux](linux/README.md) | Команды и администрирование серверов |
 | [Nginx](nginx/README.md) | Веб-сервер, виртуальные хосты, Laravel |

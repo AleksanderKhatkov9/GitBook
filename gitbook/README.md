@@ -21,13 +21,11 @@ GitBook/
 ├── package.json           ← зависимости и команды
 │
 ├── gitbook/               ← этот раздел
-├── php/ + laravel/        ← PHP и Laravel
-├── js/                    ← Vue, React, Next.js
+├── Backend/               ← PHP, Laravel
+├── Web/                   ← JS (Vue, React, Next.js), CSS
 ├── mysql/                 ← MySQL
 ├── admin/                 ← Nova, Moonshine, AdminLTE
-├── css/                   ← CSS
-├── devops/                ← Docker, Vagrant
-├── linux/                 ← Linux
+├── devops/                ← Docker, Vagrant, Nginx, Deployer
 ├── git/                   ← Git
 │
 └── _book/                 ← сгенерированный HTML (не редактировать!)

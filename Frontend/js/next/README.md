@@ -23,4 +23,4 @@ npm run dev
 
 ## Деплой с Laravel
 
-Развёртывание Next.js вместе с Laravel API на одном домене (Nginx, PM2, production): [Laravel + Next.js](../../devops/laravel-next/README.md).
+Развёртывание Next.js вместе с Laravel API на одном домене (Nginx, PM2, production): [Laravel + Next.js](../../../devops/laravel-next/README.md).

@@ -115,7 +115,7 @@ class OrderPhotoIndexPage extends IndexPage
 
 ### Вариант с Vue.js
 
-```blade
+```html
 <link href="{{ asset('css/app.css') }}">
 <script src="{{ asset('js/app.js') }}" async defer></script>
 

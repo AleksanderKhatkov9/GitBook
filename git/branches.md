@@ -14,17 +14,11 @@ git branch -v             # с последним коммитом
 
 ```bash
 # Создать ветку
-git branch feature/login
-
-# Переключиться на ветку
-git checkout feature/login
-
-# Создать и сразу переключиться
-git checkout -b feature/login
-
-# Git 2.23+ — альтернатива checkout
-git switch feature/login
-git switch -c feature/login
+git checkout -b develop 
+# отправить локальную ветку на GitHub и создать там такую ж
+git push -u origin develop
+# Если локальной ветки нет, но есть на GitHub:
+git checkout -b develop origin/develop
 ```
 
 ## Слияние (merge)

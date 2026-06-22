@@ -8,7 +8,7 @@ AdminLTE подключается к любому стеку с HTML-шабло�
 
 `resources/views/layouts/admin.blade.php`:
 
-```blade
+```html
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-bs-theme="light">
 <head>
@@ -43,7 +43,7 @@ AdminLTE подключается к любому стеку с HTML-шабло�
 
 Страница:
 
-```blade
+```html
 @extends('layouts.admin')
 
 @section('title', 'Dashboard')

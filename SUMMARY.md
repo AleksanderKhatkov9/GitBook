@@ -133,3 +133,10 @@
   * [2. Алгоритмы и структуры данных](algorithm/stage-2.md)
   * [3. Практика Easy → Medium](algorithm/stage-3.md)
   * [4. Продвинутый уровень](algorithm/stage-4.md)
+
+* [SEO](seo/README.md)
+  * [1. Основы](seo/basics.md)
+  * [2. On-Page SEO](seo/on-page.md)
+  * [3. Technical SEO](seo/technical.md)
+  * [4. SEO в Laravel](seo/laravel.md)
+  * [5. Инструменты](seo/tools.md)

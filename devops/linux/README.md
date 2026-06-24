@@ -198,3 +198,12 @@ free -h
 - [Explain Shell](https://explainshell.com/) — разбор команд
 - [Базовые команды Linux (видео)](https://www.youtube.com/watch?v=ZjTYY0FYgqA&list=PLd2_Os8Cj3t_iBeaZq0F1M9A9nvEQdlJB&index=4)
 
+
+
+## Параметр --max-depth=1 ограничивает глубину обхода каталогов одним уровнем.
+
+```bash
+Каталоги с файлами сайтов:
+root@server-ikkuup:~# du -h --max-depth=1 /var/www/
+960M /var/www/BZRMarketisSite
+```

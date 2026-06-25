@@ -67,6 +67,10 @@
   * [6. Встроенные функции](mysql/functions.md)
 
 * [Admin](admin/README.md)
+  * [Filament](admin/filament/README.md)
+    * [Установка](admin/filament/installation.md)
+    * [Документация и ресурсы](admin/filament/documentation.md)
+    * [Listing records](admin/filament/listing-records.md)
   * [Nova](admin/nova/README.md)
     * [Установка](admin/nova/installation.md)
     * [Документация и ресурсы](admin/nova/documentation.md)

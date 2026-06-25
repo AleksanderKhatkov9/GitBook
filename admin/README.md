@@ -6,14 +6,15 @@
 
 | Раздел | Описание |
 |--------|----------|
+| [Filament](filament/README.md) | SDUI-фреймворк для Laravel (Livewire, таблицы, формы) |
 | [Nova](nova/README.md) | Админ-панель от Laravel (установка, компоненты, поля) |
 | [Moonshine](moonshine/README.md) | Админ-панель для Laravel |
 | [AdminLTE](adminlte/README.md) | Шаблон админки на Bootstrap |
 
 ## Сравнение
 
-| | Nova | Moonshine | AdminLTE |
-|---|------|-----------|----------|
-| Фреймворк | Laravel | Laravel | Любой (HTML/CSS/JS) |
-| Лицензия | Платная | Open Source | MIT |
-| Стек | Vue + Laravel | Laravel + Blade | Bootstrap 5 + TypeScript |
+| | Filament | Nova | Moonshine | AdminLTE |
+|---|----------|------|-----------|----------|
+| Фреймворк | Laravel | Laravel | Laravel | Любой (HTML/CSS/JS) |
+| Лицензия | Open Source | Платная | Open Source | MIT |
+| Стек | Livewire + Tailwind | Vue + Laravel | Laravel + Blade | Bootstrap 5 + TypeScript |

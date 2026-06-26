@@ -221,7 +221,7 @@ protected string $view = 'filament.resources.users.pages.list-users';
 
 Создайте view `resources/views/filament/resources/users/pages/list-users.blade.php`:
 
-```blade
+```php
 <x-filament-panels::page>
     {{ $this->content }}
 </x-filament-panels::page>

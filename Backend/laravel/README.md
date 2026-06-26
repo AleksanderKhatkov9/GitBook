@@ -15,6 +15,7 @@ Laravel — веб-фреймворк на PHP с выразительным с�
 | [Представления](views.md) | Blade-шаблоны |
 | [Frontend](frontend.md) | Vue + Laravel, React + Laravel, Inertia |
 | [Eloquent ORM](eloquent.md) | Модели и запросы к БД |
+| [Кэш](cache.md) | Драйверы, Cache API, очистка кэша |
 | [Test ORM](test.md) | Тестовая страница |
 
 ## Быстрый старт

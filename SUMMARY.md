@@ -34,6 +34,7 @@
     * [Представления](Backend/laravel/views.md)
     * [Frontend](Backend/laravel/frontend.md)
     * [Eloquent ORM](Backend/laravel/eloquent.md)
+    * [Кэш](Backend/laravel/cache.md)
     * [Контроллеры](Backend/laravel/controllers.md)
 
 * [Frontend](Frontend/README.md)

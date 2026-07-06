@@ -1,4 +1,4 @@
-# 4. Запросы
+# 5. Запросы
 
 > Источник: [metanit.com — Запросы](https://metanit.com/sql/mysql/4.1.php)
 

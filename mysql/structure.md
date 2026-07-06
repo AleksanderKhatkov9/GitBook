@@ -131,4 +131,4 @@ ALTER TABLE comments
     FOREIGN KEY (post_id) REFERENCES posts(id) ON DELETE CASCADE;
 ```
 
-Следующая глава: [Основные операции](crud.md).
+Следующая глава: [Проектирование по ERD](erd.md).

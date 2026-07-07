@@ -22,7 +22,7 @@ GitBook/
 │
 ├── gitbook/               ← этот раздел
 ├── Backend/               ← PHP, Laravel
-├── Web/                   ← JS (Vue, React, Next.js), CSS
+├── Frontend/              ← JS (Vue, React, Next.js), CSS
 ├── mysql/                 ← MySQL
 ├── admin/                 ← Nova, Moonshine, AdminLTE
 ├── devops/                ← Docker, Vagrant, Nginx, Deployer

@@ -2,7 +2,7 @@
 
 Развёртывание fullstack-проектов: **Laravel (backend/API)** + **Next.js (frontend)** на одном домене.
 
-Связанные разделы: [Nginx](../nginx/README.md), [Deployer](../deployer/README.md), [Laravel](../../Backend/laravel/README.md), [Next.js](../../Web/js/next/README.md).
+Связанные разделы: [Nginx](../nginx/README.md), [Deployer](../deployer/README.md), [Laravel](../../Backend/laravel/README.md), [Next.js](../../Frontend/js/next/README.md).
 
 ## Материалы
 

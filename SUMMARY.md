@@ -125,6 +125,13 @@
   * [Deployer](devops/deployer/README.md)
   * [Laravel + Next.js](devops/laravel-next/README.md)
 
+* [REST](rest/README.md)
+  * [Postman](rest/postman/README.md)
+    * [Основы REST](rest/postman/rest-basics.md)
+    * [Установка Postman](rest/postman/installation.md)
+    * [Быстрый старт](rest/postman/quick-start.md)
+    * [Видео](rest/postman/videos.md)
+
 * [Git](git/README.md)
   * [Установка и настройка](git/installation.md)
   * [Основные команды](git/basics.md)

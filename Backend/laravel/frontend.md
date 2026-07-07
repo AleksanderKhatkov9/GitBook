@@ -4,7 +4,7 @@
 
 Laravel отдаёт HTML через Blade, а интерактивный UI — через **JavaScript-фреймворк**. Сборка фронтенда выполняется **Vite** (встроен в Laravel с версии 9+).
 
-Связанные разделы: [Vue.js](../../Web/js/vue/README.md), [React](../../Web/js/react/README.md), [Представления](views.md), [Laravel + Next.js](../../devops/laravel-next/README.md).
+Связанные разделы: [Vue.js](../../Frontend/js/vue/README.md), [React](../../Frontend/js/react/README.md), [Представления](views.md), [Laravel + Next.js](../../devops/laravel-next/README.md).
 
 ---
 
@@ -350,5 +350,5 @@ useEffect(() => {
 - [Inertia.js — Laravel](https://inertiajs.com/server-side-setup)
 - [Vite — Laravel](https://laravel.com/docs/13.x/vite)
 - [Laravel Sanctum (SPA auth)](https://laravel.com/docs/13.x/sanctum)
-- [Vue.js](../../Web/js/vue/README.md)
-- [React](../../Web/js/react/README.md)
+- [Vue.js](../../Frontend/js/vue/README.md)
+- [React](../../Frontend/js/react/README.md)

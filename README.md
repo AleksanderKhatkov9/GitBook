@@ -30,6 +30,7 @@ npm run serve
 | [DevOps](devops/README.md) | Docker, [Laravel Compose](devops/docker/laravel-compose/README.md), Vagrant, Nginx, Deployer, [Laravel + Next.js](devops/laravel-next/README.md) |
 | [Git](git/README.md) | Git, GitHub, ветки, команды |
 | [REST](rest/README.md) | REST API, [Postman](rest/postman/README.md) — запросы, коллекции, тесты |
+| [Курсы](courses/README.md) | [Бесплатные](courses/free/README.md), [Платные](courses/paid/README.md) |
 
 ---
 
@@ -85,6 +86,9 @@ GitBook/
 ├── git/
 ├── rest/                  ← REST API
 │   └── postman/           ← Postman: установка, запросы, тесты
+├── courses/               ← курсы
+│   ├── free/              ← бесплатные (RS School, Stepik)
+│   └── paid/              ← платные (TeachMeSkills, Stepik)
 │
 └── _book/                 ← сгенерированный HTML (не трогать!)
 ```

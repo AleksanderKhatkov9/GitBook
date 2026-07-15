@@ -147,6 +147,17 @@
   * [3. Практика Easy → Medium](algorithm/stage-3.md)
   * [4. Продвинутый уровень](algorithm/stage-4.md)
 
+* [Курсы](courses/README.md)
+  * [Бесплатные курсы](courses/free/README.md)
+    * [RS School](courses/free/rs-school.md)
+    * [Stepik](courses/free/stepik.md)
+    * [LeetCode](courses/free/leetcode.md)
+    * [Codewars](courses/free/codewars.md)
+    * [Другие платформы](courses/free/practice.md)
+  * [Платные курсы](courses/paid/README.md)
+    * [TeachMeSkills](courses/paid/teachmeskills.md)
+    * [Stepik](courses/paid/stepik.md)
+
 * [SEO](seo/README.md)
   * [1. Основы](seo/basics.md)
   * [2. On-Page SEO](seo/on-page.md)

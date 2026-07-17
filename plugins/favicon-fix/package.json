@@ -1,0 +1,9 @@
+{
+  "name": "gitbook-plugin-favicon-fix",
+  "version": "1.0.0",
+  "description": "Absolute favicon links and root /favicon.ico for HonKit",
+  "main": "index.js",
+  "engines": {
+    "gitbook": ">=3.0.0"
+  }
+}

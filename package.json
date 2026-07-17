@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "gitbook-plugin-collapsible-chapters": "^0.1.8",
+    "gitbook-plugin-favicon-fix": "file:./plugins/favicon-fix",
     "honkit": "^6.2.2"
   }
 }

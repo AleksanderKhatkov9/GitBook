@@ -1,6 +1,7 @@
 {
   "title": "GitBook",
   "plugins": [
-    "collapsible-chapters"
+    "collapsible-chapters",
+    "favicon-fix"
   ]
 }

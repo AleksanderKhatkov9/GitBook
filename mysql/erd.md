@@ -246,7 +246,7 @@ CREATE TABLE post_tags (
 
 Пример интернет-магазина:
 
-```mermaid
+```text
 erDiagram
     users ||--o{ orders : places
     orders ||--|{ order_items : contains
@@ -387,7 +387,7 @@ CREATE TABLE order_items (
 | `projects` | N:M с `employees`, `skills` |
 | `skills` | N:M с `projects` |
 
-```mermaid
+```text
 erDiagram
     employees ||--o{ job_history : has
     companies ||--o{ job_history : employs

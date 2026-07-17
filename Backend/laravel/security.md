@@ -15,7 +15,7 @@ Middleware `PreventRequestForgery` входит в группу `web` и про�
 
 В каждой форме `POST` / `PUT` / `PATCH` / `DELETE`:
 
-```blade
+```html
 <form method="POST" action="/profile">
     @csrf
     <input type="email" name="email">
@@ -26,7 +26,7 @@ Middleware `PreventRequestForgery` входит в группу `web` и про�
 Для AJAX — meta-тег и заголовок:
 
 {% raw %}
-```blade
+```html
 <meta name="csrf-token" content="{{ csrf_token() }}">
 ```
 {% endraw %}
@@ -53,7 +53,7 @@ axios.defaults.headers.common['X-CSRF-TOKEN'] =
 Blade по умолчанию экранирует вывод:
 
 {% raw %}
-```blade
+```html
 {{ $user->name }}   {{-- безопасно --}}
 {!! $html !!}       {{-- сырой HTML — только доверенный контент --}}
 ```
@@ -141,7 +141,7 @@ if ($request->user()->cannot('update', $post)) {
 В Blade:
 
 {% raw %}
-```blade
+```html
 @can('update', $post)
     <a href="{{ route('posts.edit', $post) }}">Редактировать</a>
 @endcan

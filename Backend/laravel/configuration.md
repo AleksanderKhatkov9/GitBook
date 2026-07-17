@@ -46,16 +46,15 @@ php artisan migrate
 
 ## Миграции
 
+Кратко:
+
 ```bash
-# Применить миграции
 php artisan migrate
-
-# Откатить последнюю партию
 php artisan migrate:rollback
-
-# Создать миграцию
 php artisan make:migration create_posts_table
 ```
+
+Подробнее: [Миграции](migrations.md) — создание таблиц, добавление колонок (`--table`).
 
 ## Размещение на сервере
 

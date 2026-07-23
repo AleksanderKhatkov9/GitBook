@@ -234,4 +234,4 @@ MyApp.api = { fetchUsers() { return fetch('/api/users'); } };
 - [MDN — Web Storage API](https://developer.mozilla.org/ru/docs/Web/API/Web_Storage_API)
 - [MDN — IndexedDB](https://developer.mozilla.org/ru/docs/Web/API/IndexedDB_API)
 
-[← Вернуться к оглавлению](README.md)
+[← Вернуться к оглавлению](../README.md)

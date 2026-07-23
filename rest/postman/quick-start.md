@@ -163,4 +163,4 @@ pm.test("Returns array of users", function () {
 | Импорт OpenAPI/Swagger | [Import data](https://learning.postman.com/docs/getting-started/importing-and-exporting/importing-data/) |
 | Запуск коллекции в CI | [Collection Runner](https://learning.postman.com/docs/collections/running-collections/intro-to-collection-runs/) |
 
-Связанные главы книги: [Laravel — маршруты](../../Backend/laravel/routing.md), [JavaScript — сетевые запросы](../../Frontend/js/network.md).
+Связанные главы книги: [Laravel — маршруты](../../Backend/laravel/routing.md), [JavaScript — сетевые запросы](../../Frontend/js/introduction/network.md).

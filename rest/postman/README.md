@@ -54,7 +54,7 @@ DELETE /api/users/1        → удаление
 |--------|-------|
 | [Laravel — маршруты](../../Backend/laravel/routing.md) | Определение REST API в `routes/api.php` |
 | [Laravel — контроллеры](../../Backend/laravel/controllers.md) | Логика обработки запросов |
-| [JavaScript — сетевые запросы](../../Frontend/js/network.md) | `fetch` на стороне клиента |
+| [JavaScript — сетевые запросы](../../Frontend/js/introduction/network.md) | `fetch` на стороне клиента |
 | [Laravel + Next.js](../../devops/laravel-next/README.md) | Fullstack: Next.js → Laravel API |
 
 ## Полезные ссылки

@@ -9,15 +9,15 @@ JavaScript — язык программирования для веба. Раб
 
 | Глава | Описание |
 |-------|----------|
-| [1. Введение](introduction.md) | Что такое JS, подключение, консоль, strict mode |
-| [2. Основы](basics.md) | Переменные, типы, операторы, условия, циклы |
-| [3. Функции](functions.md) | Объявление, стрелочные функции, замыкания, scope |
-| [4. Объекты и классы](objects-classes.md) | Объекты, прототипы, классы, деструктуризация |
-| [5. Массивы и коллекции](arrays-collections.md) | Array, Set, Map, строки, RegExp |
-| [6. Асинхронность](async.md) | Ошибки, Promise, async/await |
-| [7. Сетевые запросы](network.md) | Fetch, FormData, WebSocket, SSE, CORS |
-| [8. DOM и события](dom-events.md) | Работа со страницей, обработка событий |
-| [9. Модули и хранение](modules-storage.md) | ES modules, JSON, localStorage |
+| [1. Введение](introduction/introduction.md) | Что такое JS, подключение, консоль, strict mode |
+| [2. Основы](introduction/basics.md) | Переменные, типы, операторы, условия, циклы |
+| [3. Функции](introduction/functions.md) | Объявление, стрелочные функции, замыкания, scope |
+| [4. Объекты и классы](introduction/objects-classes.md) | Объекты, прототипы, классы, деструктуризация |
+| [5. Массивы и коллекции](introduction/arrays-collections.md) | Array, Set, Map, строки, RegExp |
+| [6. Асинхронность](introduction/async.md) | Ошибки, Promise, async/await |
+| [7. Сетевые запросы](introduction/network.md) | Fetch, FormData, WebSocket, SSE, CORS |
+| [8. DOM и события](introduction/dom-events.md) | Работа со страницей, обработка событий |
+| [9. Модули и хранение](introduction/modules-storage.md) | ES modules, JSON, localStorage |
 
 ## Фреймворки
 

@@ -31,6 +31,7 @@ npm run serve
 | [Git](git/README.md) | Git, GitHub, ветки, команды |
 | [REST](rest/README.md) | REST API, [Postman](rest/postman/README.md) — запросы, коллекции, тесты |
 | [Курсы](courses/README.md) | [Бесплатные](courses/free/README.md), [Платные](courses/paid/README.md) |
+| [English Grammar](english/README.md) | Грамматика английского: времена, части речи, модальные |
 
 ---
 
@@ -89,6 +90,7 @@ GitBook/
 ├── courses/               ← курсы
 │   ├── free/              ← бесплатные (RS School, Stepik)
 │   └── paid/              ← платные (TeachMeSkills, Stepik)
+├── english/               ← грамматика английского языка
 │
 └── _book/                 ← сгенерированный HTML (не трогать!)
 ```

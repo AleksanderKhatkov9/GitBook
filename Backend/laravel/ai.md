@@ -61,6 +61,8 @@ Boost подставляет guidelines под установленные пак
 
 Поддержка MCP: Cursor, Claude Code, Codex, Gemini CLI, GitHub Copilot, Junie. Настройка: [Boost — Set Up Your Agents](https://laravel.com/docs/13.x/boost#set-up-your-agents).
 
+Подробнее об AI IDE: [Cursor](../../ai/cursor.md), [Kiro](../../ai/kiro.md), [Ollama](../../ai/ollama.md).
+
 ## Практика с AI в проекте
 
 1. Установите Boost — агент видит реальную схему и маршруты.
@@ -73,6 +75,7 @@ Boost подставляет guidelines под установленные пак
 
 | Тема | Страница |
 |------|----------|
+| AI IDE и локальные LLM | [ИИ — Ollama, Cursor, Kiro](../../ai/README.md) |
 | Куда класть классы | [Структура проекта](structure.md) |
 | Миграции | [Миграции](migrations.md) |
 | Модели | [Eloquent ORM](eloquent.md) |

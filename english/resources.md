@@ -14,7 +14,7 @@
 
 Дополнительно: [Cambridge Dictionary](https://dictionary.cambridge.org/), [BBC Learning English](https://www.bbc.co.uk/learningenglish).
 
-| **ChatGPT + ИИ** | [ai-practice.md](ai-practice.md) | Грамматика, диалог, голос, готовые промпты |
+| **ChatGPT + ИИ** | [ai-practice.md](ai-practice.md) | Грамматика через ChatGPT, Ollama, Cursor, Kiro |
 
 ---
 

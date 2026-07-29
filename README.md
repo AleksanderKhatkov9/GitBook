@@ -13,7 +13,7 @@ npm install
 npm run serve
 ```
 
-Книга откроется: **http://localhost:4000**
+Книга откроется: **[http://localhost:4000](http://localhost:4000)**
 
 Подробнее: [Установка GitBook](gitbook/installation.md)
 
@@ -21,17 +21,20 @@ npm run serve
 
 ## Разделы документации
 
-| Раздел | Описание |
-|--------|----------|
-| [GitBook](gitbook/README.md) | Установка, создание страниц, меню |
-| [Backend](Backend/README.md) | [PHP](Backend/php/README.md) → [Laravel](Backend/laravel/README.md), [Frontend](Frontend/README.md) (JS, CSS) |
-| [MySQL](mysql/README.md) | База данных MySQL |
-| [Admin](admin/README.md) | [Nova](admin/nova/README.md), [Moonshine](admin/moonshine/README.md), [AdminLTE](admin/adminlte/README.md) |
-| [DevOps](devops/README.md) | Docker, [Laravel Compose](devops/docker/laravel-compose/README.md), Vagrant, Nginx, Deployer, [Laravel + Next.js](devops/laravel-next/README.md) |
-| [Git](git/README.md) | Git, GitHub, ветки, команды |
-| [REST](rest/README.md) | REST API, [Postman](rest/postman/README.md) — запросы, коллекции, тесты |
-| [Курсы](courses/README.md) | [Бесплатные](courses/free/README.md), [Платные](courses/paid/README.md) |
-| [English Grammar](english/README.md) | Грамматика английского: времена, части речи, модальные |
+
+| Раздел                               | Описание                                                                                                                                         |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [GitBook](gitbook/README.md)         | Установка, создание страниц, меню                                                                                                                |
+| [Backend](Backend/README.md)         | [PHP](Backend/php/README.md) → [Laravel](Backend/laravel/README.md), [Frontend](Frontend/README.md) (JS, CSS)                                    |
+| [MySQL](mysql/README.md)             | База данных MySQL                                                                                                                                |
+| [Admin](admin/README.md)             | [Nova](admin/nova/README.md), [Moonshine](admin/moonshine/README.md), [AdminLTE](admin/adminlte/README.md)                                       |
+| [DevOps](devops/README.md)           | Docker, [Laravel Compose](devops/docker/laravel-compose/README.md), Vagrant, Nginx, Deployer, [Laravel + Next.js](devops/laravel-next/README.md) |
+| [Git](git/README.md)                 | Git, GitHub, ветки, команды                                                                                                                      |
+| [REST](rest/README.md)               | REST API, [Postman](rest/postman/README.md) — запросы, коллекции, тесты                                                                          |
+| [Курсы](courses/README.md)           | [Бесплатные](courses/free/README.md), [Платные](courses/paid/README.md)                                                                          |
+| [English Grammar](english/README.md) | Грамматика английского: времена, части речи, модальные                                                                                           |
+| [ИИ](ai/README.md)                   | Ollama, Continue, OpenRouter, Cursor, Claude, Kiro                                                                                               |
+
 
 ---
 
@@ -39,12 +42,14 @@ npm run serve
 
 Fullstack-проекты (Laravel API + Next.js frontend) на одном домене:
 
-| Компонент | Роль |
-|-----------|------|
-| **Next.js** | Frontend, точка входа (`/`) |
-| **Laravel** | Backend, REST API (`/api`) |
-| **Nginx** | Прокси на Next.js + PHP-FPM для Laravel |
-| **PM2** | Запуск и перезапуск Next.js на сервере |
+
+| Компонент   | Роль                                    |
+| ----------- | --------------------------------------- |
+| **Next.js** | Frontend, точка входа (`/`)             |
+| **Laravel** | Backend, REST API (`/api`)              |
+| **Nginx**   | Прокси на Next.js + PHP-FPM для Laravel |
+| **PM2**     | Запуск и перезапуск Next.js на сервере  |
+
 
 Примеры проектов: `markitect.by`, `marketis.by`, `marketis.site`.
 
@@ -91,6 +96,7 @@ GitBook/
 │   ├── free/              ← бесплатные (RS School, Stepik)
 │   └── paid/              ← платные (TeachMeSkills, Stepik)
 ├── english/               ← грамматика английского языка
+├── ai/                    ← Ollama, Continue, OpenRouter, Cursor, Claude, Kiro
 │
 └── _book/                 ← сгенерированный HTML (не трогать!)
 ```
@@ -109,7 +115,10 @@ GitBook/
 
 ## Полезные команды
 
-| Команда | Описание |
-|---------|----------|
-| `npm run serve` | Локальный просмотр с автообновлением |
+
+| Команда         | Описание                               |
+| --------------- | -------------------------------------- |
+| `npm run serve` | Локальный просмотр с автообновлением   |
 | `npm run build` | Сборка сайта в `_book/` для публикации |
+
+

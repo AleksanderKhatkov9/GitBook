@@ -223,6 +223,14 @@
   * [4. SEO в Laravel](seo/laravel.md)
   * [5. Инструменты](seo/tools.md)
 
+* [ИИ](ai/README.md)
+  * [Ollama](ai/ollama.md)
+  * [Continue](ai/continue.md)
+  * [OpenRouter](ai/openrouter.md)
+  * [Cursor](ai/cursor.md)
+  * [Claude](ai/claude.md)
+  * [Kiro](ai/kiro.md)
+
 * [English Grammar](english/README.md)
   * [1. Начинающим](english/beginners.md)
   * [2. Части речи](english/parts-of-speech.md)
@@ -234,4 +242,4 @@
   * [8. Предложение](english/sentence.md)
   * [9. Правописание](english/spelling.md)
   * [Ресурсы и план](english/resources.md)
-  * [ИИ: грамматика и речь (ChatGPT)](english/ai-practice.md)
+  * [ИИ: грамматика и речь](english/ai-practice.md)

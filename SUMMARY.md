@@ -229,6 +229,9 @@
     * [TeachMeSkills](courses/paid/teachmeskills.md)
     * [Stepik](courses/paid/stepik.md)
 
+* [Карьера](career/README.md)
+  * [Валютная удалёнка](career/remote-currency.md)
+
 * [SEO](seo/README.md)
   * [1. Основы](seo/basics.md)
   * [2. On-Page SEO](seo/on-page.md)

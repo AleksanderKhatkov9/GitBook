@@ -7,7 +7,7 @@
     "prebuild": "node scripts/patch-honkit-serve.js",
     "preserve": "node scripts/patch-honkit-serve.js",
     "serve": "honkit serve",
-    "build": "honkit build"
+    "build": "node scripts/check-serve-stopped.js && honkit build --reload"
   },
   "devDependencies": {
     "gitbook-plugin-collapsible-chapters": "^0.1.8",

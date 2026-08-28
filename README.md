@@ -35,6 +35,7 @@ npm run serve
 | [Алгоритмы](algorithm/README.md)     | Подготовка к собеседованиям: синтаксис → LeetCode                                                                                                |
 | [Курсы](courses/README.md)           | [Бесплатные](courses/free/README.md), [Платные](courses/paid/README.md)                                                                          |
 | [Карьера](career/README.md)          | [Валютная удалёнка](career/remote-currency.md) — поиск remote с оплатой в USD / EUR                                                              |
+| [Менеджмент](management/README.md)   | [Рабочий день](management/workday.md), [восстановление](management/recovery.md), [не выгорать](management/burnout.md)                             |
 | [SEO](seo/README.md)                 | On-Page, technical, SEO в Laravel                                                                                                                |
 | [ИИ](ai/README.md)                   | Ollama, Continue, OpenRouter, Cursor, Claude, Kiro                                                                                               |
 | [Английский](english/README.md)      | Грамматика: времена, части речи, модальные                                                                                                       |
@@ -104,6 +105,7 @@ GitBook/
 │   ├── free/              ← бесплатные (RS School, Stepik)
 │   └── paid/              ← платные (TeachMeSkills, Stepik)
 ├── career/                ← карьера, валютная удалёнка
+├── management/            ← рабочий день и восстановление
 ├── seo/
 ├── english/               ← грамматика английского языка
 ├── ai/                    ← Ollama, Continue, OpenRouter, Cursor, Claude, Kiro
@@ -129,6 +131,6 @@ GitBook/
 | Команда         | Описание                               |
 | --------------- | -------------------------------------- |
 | `npm run serve` | Локальный просмотр с автообновлением   |
-| `npm run build` | Сборка сайта в `_book/` для публикации |
+| `npm run build` | Полная сборка в `_book/` (сброс кэша). Сначала остановите `serve` |
 
 

@@ -14,3 +14,4 @@
 | [Алгоритмы](../algorithm/README.md) | Подготовка к coding interview |
 | [Курсы](../courses/README.md) | Учёба и практика |
 | [Git](../git/README.md) | GitHub-профиль и Pull Request |
+| [Менеджмент](../management/README.md) | Рабочий день и восстановление после кода |

@@ -239,6 +239,11 @@
 * [Карьера](career/README.md)
   * [Валютная удалёнка](career/remote-currency.md)
 
+* [Менеджмент](management/README.md)
+  * [Рабочий день](management/workday.md)
+  * [Восстановление](management/recovery.md)
+  * [Не выгорать](management/burnout.md)
+
 * [SEO](seo/README.md)
   * [1. Основы](seo/basics.md)
   * [2. On-Page SEO](seo/on-page.md)

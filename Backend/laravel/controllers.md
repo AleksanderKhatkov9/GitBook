@@ -4,7 +4,7 @@
 
 Контроллеры группируют логику обработки HTTP-запросов в отдельные классы. По умолчанию они лежат в `app/Http/Controllers/`.
 
-См. также: [Маршруты](routing.md)
+См. также: [Маршруты](routing.md) · [Middleware](middleware.md) · [Валидация](validation.md)
 
 ## Создание контроллера
 
@@ -292,3 +292,5 @@ public function update(Request $request, string $id): RedirectResponse
     // ...
 }
 ```
+
+См. также: [Маршруты](routing.md) · [Middleware](middleware.md) · [Валидация](validation.md) · [REST API](api.md).

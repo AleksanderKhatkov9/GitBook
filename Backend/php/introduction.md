@@ -73,4 +73,4 @@ php -v
 | [Безопасность](security.md) | Ввод, сессии, БД |
 | [Особенности](features.md) | Cookies, сессии, загрузки, CLI |
 
-Связанные разделы: [ООП](OOP/README.md), [SOLID](SOLID/README.md), [Laravel](../laravel/README.md).
+Связанные разделы: [Установка](installation.md), [PHP-FPM](php-fpm.md), [ООП](OOP/README.md), [SOLID](SOLID/README.md), [Laravel](../laravel/README.md).

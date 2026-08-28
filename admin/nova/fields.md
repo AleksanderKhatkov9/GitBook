@@ -1,4 +1,4 @@
-# Поля (Fields)
+# Поля
 
 > Документация: [Custom Fields | Nova v5](https://nova.laravel.com/docs/v5/customization/fields)
 

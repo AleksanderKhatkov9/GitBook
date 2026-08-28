@@ -4,7 +4,7 @@
 
 Eloquent — ORM Laravel (ActiveRecord): каждой таблице соответствует модель. Ускоряет CRUD, защищает от SQL-инъекций через bindings.
 
-См. также: [Database](database.md) · [Миграции](migrations.md)
+См. также: [База данных](database.md) · [Миграции](migrations.md)
 
 ## Создание модели
 

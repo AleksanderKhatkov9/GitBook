@@ -22,4 +22,7 @@
 | Vagrant | Полноценная VM, legacy-проекты, сложное окружение |
 | Nginx | Веб-сервер для PHP/Laravel на VPS |
 | Deployer | Деплой Laravel/PHP на VPS по SSH |
-| PM2 + Nginx | Next.js frontend на production-сервере |
+| [PM2](../Frontend/pm2/README.md) + Nginx | Next.js frontend на production-сервере |
+| [PHP-FPM](../Backend/php/php-fpm.md) | Выполнение PHP за Nginx |
+
+> В примерах Nginx и Linux — PHP **8.3**. Если сайт на 8.1, меняйте имя сокета и сервиса, а не копируйте 8.3 вслепую.

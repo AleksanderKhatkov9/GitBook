@@ -105,6 +105,8 @@ sudo systemctl restart php8.3-fpm
 
 ## Менеджер процессов PM2
 
+Полная документация: [PM2](../../Frontend/pm2/README.md).
+
 ### Запуск нового процесса
 
 ```bash
@@ -138,17 +140,20 @@ pm2 restart all
 
 ## Место на диске
 
-Свободное место на диске:
+Свободное место:
 
 ```bash
 df -h
 ```
 
-Распределение занятого пространства по каталогам:
+Занято по каталогам (один уровень):
 
 ```bash
-ncdu
+du -h --max-depth=1 /var/www/
+# 960M  /var/www/BZRMarketisSite
 ```
+
+Интерактивно: `ncdu`.
 
 ## SSH
 
@@ -157,23 +162,20 @@ ssh user@192.168.1.100
 scp file.txt user@server:/home/user/
 ```
 
-## Ошибка 505
+## Ошибка 502
 
-Когда места на сервере достаточно (`df -h` показывает ~70% занято), перезапустите веб-сервисы:
+Nginx отдаёт **502 Bad Gateway**, когда PHP-FPM не отвечает: процесс упал, неверный сокет или OOM-kill. HTTP **505** (HTTP Version Not Supported) к этому не относится.
+
+Если диск ещё не заполнен (`df -h` ~70%), сначала перезапустите сервисы (версию FPM подставьте свою):
 
 ```bash
 sudo systemctl restart nginx
-sudo systemctl restart php8.2-fpm
+sudo systemctl restart php8.3-fpm
 ```
 
-При проблемах с PHP-FPM 8.2 перезагрузите:
+Подробнее: [PHP-FPM — типичные ошибки](../../Backend/php/php-fpm.md) · [Nginx](../nginx/README.md).
 
-- `nginx`
-- `php8.2-fpm`
-
-## Ошибка 502
-
-**Итог:** проблема была в OOM-kill → PHP-FPM падал → Nginx отдавал 502. Swap + перезапуск PHP-FPM это исправили.
+**Итог по инциденту:** OOM-kill → PHP-FPM падал → Nginx отдавал 502. Swap + перезапуск FPM это исправили.
 
 ### Добавить swap (если его нет)
 
@@ -197,13 +199,4 @@ free -h
 - [Linux Journey](https://linuxjourney.com/)
 - [Explain Shell](https://explainshell.com/) — разбор команд
 - [Базовые команды Linux (видео)](https://www.youtube.com/watch?v=ZjTYY0FYgqA&list=PLd2_Os8Cj3t_iBeaZq0F1M9A9nvEQdlJB&index=4)
-
-
-
-## Параметр --max-depth=1 ограничивает глубину обхода каталогов одним уровнем.
-
-```bash
-Каталоги с файлами сайтов:
-root@server-ikkuup:~# du -h --max-depth=1 /var/www/
-960M /var/www/BZRMarketisSite
-```
+- [PHP-FPM](../../Backend/php/php-fpm.md)

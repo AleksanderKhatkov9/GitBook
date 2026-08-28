@@ -10,7 +10,7 @@
 
 | Раздел | Зачем |
 |--------|-------|
-| [English](../english/README.md) | Английский для собеседований и переписки |
-| [Algorithm](../algorithm/README.md) | Подготовка к coding interview |
+| [Английский](../english/README.md) | Английский для собеседований и переписки |
+| [Алгоритмы](../algorithm/README.md) | Подготовка к coding interview |
 | [Курсы](../courses/README.md) | Учёба и практика |
 | [Git](../git/README.md) | GitHub-профиль и Pull Request |

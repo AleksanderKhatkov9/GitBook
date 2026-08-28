@@ -7,7 +7,8 @@
 | Раздел | Описание |
 |--------|----------|
 | [Введение](introduction.md) | Что такое PHP, версии, карта раздела |
-| [Установка и настройка](installation.md) | PHP, FPM, Composer, php.ini |
+| [Установка и настройка](installation.md) | PHP, Composer, php.ini |
+| [PHP-FPM](php-fpm.md) | Пул воркеров, сокет, Nginx, 502 |
 | [Синтаксис](syntax.md) | Теги, инструкции, комментарии |
 | [Типы](types.md) | Scalar, array, object, union types |
 | [Переменные](variables.md) | Область видимости, суперглобальные |

@@ -50,6 +50,7 @@ npm run dev
 ## Laravel
 
 Развёртывание Next.js вместе с Laravel API: [Laravel + Next.js](../../../devops/laravel-next/README.md).  
+Запуск Next.js на сервере: [PM2](../../pm2/README.md).  
 Подключение фронтенда к Laravel: [Frontend](../../../Backend/laravel/frontend.md).
 
 ## Источники

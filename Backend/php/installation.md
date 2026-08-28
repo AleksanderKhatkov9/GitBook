@@ -19,13 +19,15 @@ php -m   # загруженные модули
 php --ini
 ```
 
+> В примерах команд — **PHP 8.3**. Пакеты и сокеты на сервере могут быть `php8.1` / `php8.2` — подставьте версию проекта. Подробно: [PHP-FPM](php-fpm.md).
+
 ## PHP-FPM и веб-сервер
 
 Для production обычно: Nginx/Apache → PHP-FPM → приложение.
 
 Document root должен указывать на `public/` (в Laravel), а не на корень проекта.
 
-Документация FPM: [FastCGI Process Manager](https://www.php.net/manual/ru/install.fpm.php).
+Подробно: [PHP-FPM](php-fpm.md) — пулы, воркеры, сокет, команды, типичные ошибки. Официально: [FastCGI Process Manager](https://www.php.net/manual/ru/install.fpm.php).
 
 ## Composer
 

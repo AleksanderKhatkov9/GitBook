@@ -25,16 +25,19 @@ npm run serve
 | Раздел                               | Описание                                                                                                                                         |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [GitBook](gitbook/README.md)         | Установка, создание страниц, меню                                                                                                                |
-| [Backend](Backend/README.md)         | [PHP](Backend/php/README.md) → [Laravel](Backend/laravel/README.md), [Frontend](Frontend/README.md) (JS, CSS)                                    |
+| [Backend](Backend/README.md)         | [PHP](Backend/php/README.md), [PHP-FPM](Backend/php/php-fpm.md), [Laravel](Backend/laravel/README.md)                                             |
+| [Frontend](Frontend/README.md)       | JavaScript (Vue, React, Next.js), CSS, HTML, [PM2](Frontend/pm2/README.md)                                                                       |
 | [MySQL](mysql/README.md)             | База данных MySQL                                                                                                                                |
-| [Admin](admin/README.md)             | [Nova](admin/nova/README.md), [Moonshine](admin/moonshine/README.md), [AdminLTE](admin/adminlte/README.md)                                       |
+| [Admin](admin/README.md)             | [Filament](admin/filament/README.md), [Nova](admin/nova/README.md), [Moonshine](admin/moonshine/README.md), [AdminLTE](admin/adminlte/README.md) |
 | [DevOps](devops/README.md)           | Docker, [Laravel Compose](devops/docker/laravel-compose/README.md), Vagrant, Nginx, Deployer, [Laravel + Next.js](devops/laravel-next/README.md) |
 | [Git](git/README.md)                 | Git, GitHub, ветки, команды                                                                                                                      |
 | [REST](rest/README.md)               | REST API, [Postman](rest/postman/README.md) — запросы, коллекции, тесты                                                                          |
+| [Алгоритмы](algorithm/README.md)     | Подготовка к собеседованиям: синтаксис → LeetCode                                                                                                |
 | [Курсы](courses/README.md)           | [Бесплатные](courses/free/README.md), [Платные](courses/paid/README.md)                                                                          |
 | [Карьера](career/README.md)          | [Валютная удалёнка](career/remote-currency.md) — поиск remote с оплатой в USD / EUR                                                              |
-| [English Grammar](english/README.md) | Грамматика английского: времена, части речи, модальные                                                                                           |
+| [SEO](seo/README.md)                 | On-Page, technical, SEO в Laravel                                                                                                                |
 | [ИИ](ai/README.md)                   | Ollama, Continue, OpenRouter, Cursor, Claude, Kiro                                                                                               |
+| [Английский](english/README.md)      | Грамматика: времена, части речи, модальные                                                                                                       |
 
 
 ---
@@ -68,7 +71,7 @@ GitBook/
 ├── package.json           ← зависимости и команды
 │
 ├── gitbook/               ← как работать с этой книгой
-├── Backend/               ← PHP, Laravel
+├── Backend/               ← PHP, PHP-FPM, Laravel
 │   ├── php/
 │   └── laravel/
 ├── Frontend/              ← JavaScript и CSS
@@ -76,9 +79,12 @@ GitBook/
 │   │   ├── vue/
 │   │   ├── react/
 │   │   └── next/
-│   └── css/
+│   ├── css/
+│   ├── html/
+│   └── pm2/               ← менеджер процессов Node.js / Next.js
 ├── mysql/
 ├── admin/
+│   ├── filament/
 │   ├── nova/
 │   ├── moonshine/
 │   └── adminlte/
@@ -93,10 +99,12 @@ GitBook/
 ├── git/
 ├── rest/                  ← REST API
 │   └── postman/           ← Postman: установка, запросы, тесты
+├── algorithm/             ← подготовка к собеседованиям
 ├── courses/               ← курсы
 │   ├── free/              ← бесплатные (RS School, Stepik)
 │   └── paid/              ← платные (TeachMeSkills, Stepik)
 ├── career/                ← карьера, валютная удалёнка
+├── seo/
 ├── english/               ← грамматика английского языка
 ├── ai/                    ← Ollama, Continue, OpenRouter, Cursor, Claude, Kiro
 │

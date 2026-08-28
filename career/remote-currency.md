@@ -1,6 +1,6 @@
 # Поиск валютной удалёнки
 
-> **Видео:** [Поиск валютной удалёнки (YouTube)](https://www.youtube.com/watch?v=IdNkGSYOvqo)
+> **Видео:** [ПРАКТИЧЕСКИЙ ГАЙД. Часть 1](https://www.youtube.com/watch?v=IdNkGSYOvqo) · [Часть 2](https://www.youtube.com/watch?v=OFk35cQPvZQ)
 
 **Валютная удалёнка** — удалённая работа с оплатой в иностранной валюте (чаще USD / EUR), обычно в зарубежных или международных компаниях.
 
@@ -193,7 +193,8 @@ Full-Stack Developer (Laravel + React) | Open to remote USD/EUR
 
 ## Полезные ссылки
 
-- [Видео: поиск валютной удалёнки (YouTube)](https://www.youtube.com/watch?v=IdNkGSYOvqo)
+- [Видео: практический гайд, часть 1 (YouTube)](https://www.youtube.com/watch?v=IdNkGSYOvqo)
+- [Видео: практический гайд, часть 2 (YouTube)](https://www.youtube.com/watch?v=OFk35cQPvZQ)
 - [Remote OK](https://remoteok.com/)
 - [We Work Remotely](https://weworkremotely.com/)
 - [Wellfound](https://wellfound.com/)

@@ -125,7 +125,7 @@ connection_aborted(); // клиент отключился?
 
 > [Persistent Database Connections](https://www.php.net/manual/ru/features.persistent-connections.php)
 
-`PDO::ATTR_PERSISTENT` и аналоги переиспользуют соединение между запросами. В PHP-FPM даёт выигрыш, но требует аккуратной настройки (состояние сессии БД, лимиты).
+`PDO::ATTR_PERSISTENT` и аналоги переиспользуют соединение между запросами. В [PHP-FPM](php-fpm.md) даёт выигрыш, но требует аккуратной настройки (состояние сессии БД, лимиты).
 
 ## CLI
 

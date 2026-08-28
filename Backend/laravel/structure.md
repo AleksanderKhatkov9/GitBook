@@ -143,4 +143,4 @@ php artisan make:controller PostController
 php artisan model:show Post   # Обзор модели
 ```
 
-См. также: [Миграции](migrations.md) · [Контроллеры](controllers.md) · [Eloquent ORM](eloquent.md) · [Testing](testing.md)
+См. также: [Миграции](migrations.md) · [Контроллеры](controllers.md) · [Eloquent ORM](eloquent.md) · [Artisan](artisan.md) · [Тестирование](testing.md)

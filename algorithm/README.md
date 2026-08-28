@@ -49,7 +49,7 @@ php solution.php
 |--------|----------|
 | [code.mu — ООП в PHP](https://code.mu/ru/php/book/oop/) | Самоучитель |
 | [ООП в GitBook](../Backend/php/OOP/README.md) | Классы, наследование, трейты |
-| [Design-patterns](../Backend/php/patterns/README.md) | Factory, Strategy, Observer |
+| [Паттерны проектирования](../Backend/php/patterns/README.md) | Factory, Strategy, Observer |
 
 ## Связанные разделы
 

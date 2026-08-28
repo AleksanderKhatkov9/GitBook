@@ -1,4 +1,4 @@
-# AI
+# ИИ в Laravel
 
 > Источник: [AI Assisted Development | Laravel 13.x](https://laravel.com/docs/13.x/ai) · [Laravel Boost](https://github.com/laravel/boost)
 
@@ -68,8 +68,8 @@ Boost подставляет guidelines под установленные пак
 1. Установите Boost — агент видит реальную схему и маршруты.
 2. Держите конвенции Laravel (не изобретайте свою структуру без нужды).
 3. Просите генерировать через Artisan: `make:model`, `make:migration`, `make:controller`.
-4. Проверяйте mass assignment, policies и валидацию — [Security](security.md).
-5. Покрывайте ключевые сценарии тестами — [Testing](testing.md).
+4. Проверяйте mass assignment, policies и валидацию — [Безопасность](security.md).
+5. Покрывайте ключевые сценарии тестами — [Тестирование](testing.md).
 
 ## Связанные разделы
 
@@ -79,4 +79,4 @@ Boost подставляет guidelines под установленные пак
 | Куда класть классы | [Структура проекта](structure.md) |
 | Миграции | [Миграции](migrations.md) |
 | Модели | [Eloquent ORM](eloquent.md) |
-| Тесты | [Testing](testing.md) |
+| Тесты | [Тестирование](testing.md) |

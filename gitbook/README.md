@@ -21,14 +21,23 @@ GitBook/
 ├── package.json           ← зависимости и команды
 │
 ├── gitbook/               ← этот раздел
-├── Backend/               ← PHP, Laravel
-├── Frontend/              ← JS (Vue, React, Next.js), CSS
-├── mysql/                 ← MySQL
-├── admin/                 ← Nova, Moonshine, AdminLTE
-├── devops/                ← Docker, Vagrant, Nginx, Deployer
-├── git/                   ← Git
+├── Backend/               ← PHP, PHP-FPM, Laravel
+├── Frontend/              ← JS (Vue, React, Next.js), CSS, HTML, PM2
+├── mysql/
+├── admin/                 ← Filament, Nova, Moonshine, AdminLTE
+├── devops/                ← Docker, Vagrant, Linux, Nginx, Deployer
+├── git/
+├── rest/                  ← REST API, Postman
+├── algorithm/
+├── courses/
+├── career/
+├── seo/
+├── ai/
+├── english/
 │
 └── _book/                 ← сгенерированный HTML (не редактировать!)
 ```
+
+Полное дерево с подпапками — на [главной](../README.md). Меню слева задаётся только в `SUMMARY.md`.
 
 Все страницы пишутся в `.md`, HTML генерируется автоматически командой `npm run serve` или `npm run build`.

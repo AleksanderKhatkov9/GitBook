@@ -1,4 +1,4 @@
-# Testing
+# Тестирование
 
 > Источник: [Testing](https://laravel.com/docs/13.x/testing) · [HTTP Tests](https://laravel.com/docs/13.x/http-tests) · [Database Testing](https://laravel.com/docs/13.x/database-testing)
 
@@ -234,4 +234,4 @@ pest()->use(WithCachedConfig::class);
 3. Запускайте `php artisan test` в CI.
 4. При росте suite — `--parallel` и `--profile`.
 
-См. также: [Структура проекта](structure.md) · [Eloquent ORM](eloquent.md) · [Security](security.md)
+См. также: [Структура проекта](structure.md) · [Eloquent ORM](eloquent.md) · [Безопасность](security.md)

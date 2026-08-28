@@ -59,3 +59,5 @@ php artisan make:migration create_posts_table
 ## Размещение на сервере
 
 Document root веб-сервера должен указывать на папку `public/`, не на корень проекта.
+
+CLI-команды (`migrate`, `optimize`, cron): [Artisan](artisan.md). Production: [PHP-FPM](../php/php-fpm.md), [Nginx](../../devops/nginx/README.md).

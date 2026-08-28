@@ -13,7 +13,9 @@ Nginx — веб-сервер и reverse proxy. В PHP/Laravel-проектах 
 | PHP-FPM | Выполнение PHP-кода |
 | Laravel | Приложение в `public/` |
 
-Связанные разделы: [Linux](../linux/README.md), [Deployer](../deployer/README.md), [Vagrant](../vagrant/README.md).
+Связанные разделы: [Linux](../linux/README.md), [PHP-FPM](../../Backend/php/php-fpm.md), [Deployer](../deployer/README.md), [Vagrant](../vagrant/README.md), [PM2](../../Frontend/pm2/README.md).
+
+> В примерах — **PHP 8.3**. На сервере подставьте свою версию в сокете и имени сервиса (`php8.1-fpm.sock`). Несовпадение с `fastcgi_pass` даёт **502**.
 
 ---
 
@@ -208,6 +210,8 @@ server {
 
 Nginx не выполняет PHP сам — передаёт запросы в PHP-FPM через Unix-сокет.
 
+Подробно про пулы, воркеры и `php.ini`: [PHP-FPM](../../Backend/php/php-fpm.md).
+
 ### Проверить сокет
 
 ```bash
@@ -323,14 +327,21 @@ ls -la /var/run/php/php8.3-fpm.sock
 
 ---
 
+## Копирование конфига сайта
 
-## Копирования файлов 
+Новый виртуальный хост удобно клонировать с рабочего и поправить `server_name` и `root`:
 
 ```bash
-cp /etc/nginx/sites-available/bzr_hr.conf /etc/nginx/sites-available/bzr_tech.conf
+sudo cp /etc/nginx/sites-available/bzr_hr.conf /etc/nginx/sites-available/bzr_tech.conf
+sudo nano /etc/nginx/sites-available/bzr_tech.conf
+sudo ln -s /etc/nginx/sites-available/bzr_tech.conf /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl reload nginx
 ```
----
 
+Не копируйте файл сразу в `sites-enabled/` — сначала правки, проверка `nginx -t`, затем симлинк.
+
+---
 
 ## Полезные ссылки
 

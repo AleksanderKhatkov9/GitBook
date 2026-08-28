@@ -17,6 +17,7 @@
 | Laravel + Next.js + Nginx | [stackoverflow.com](https://stackoverflow.com/questions/69203622/how-to-deploy-nextjs-laravel-project-with-nginx) |
 | Next.js + Docker (официально) | [nextjs.org/docs](https://nextjs.org/docs/app/getting-started/deploying#templates-1) |
 | Docker-пример Next.js | [github.com/vercel/next.js](https://github.com/vercel/next.js/tree/canary/examples/with-docker) |
+| PM2 (этот GitBook) | [Frontend/pm2](../../Frontend/pm2/README.md) |
 | PM2 | [nodejsdev.ru/guides/webdraftt/pm2](https://nodejsdev.ru/guides/webdraftt/pm2/) |
 
 ---
@@ -249,7 +250,7 @@ location / {
 
 ## PM2 — менеджер процессов
 
-Next.js на сервере запускают через [PM2](https://nodejsdev.ru/guides/webdraftt/pm2/), чтобы процесс перезапускался после падения или перезагрузки сервера.
+Next.js на сервере запускают через [PM2](../../Frontend/pm2/README.md), чтобы процесс перезапускался после падения или перезагрузки сервера. Полная шпаргалка команд: [PM2](../../Frontend/pm2/README.md).
 
 ### Основные команды
 

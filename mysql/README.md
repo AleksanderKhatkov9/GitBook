@@ -19,7 +19,7 @@ MySQL — реляционная СУБД. Данные хранятся в та
 
 ## Laravel
 
-Подключение и миграции: [Eloquent ORM](../Backend/laravel/eloquent.md), конфигурация в [configuration.md](../Backend/laravel/configuration.md).
+Подключение и миграции: [База данных](../Backend/laravel/database.md), [Eloquent ORM](../Backend/laravel/eloquent.md), конфигурация в [configuration.md](../Backend/laravel/configuration.md).
 
 ```ini
 DB_CONNECTION=mysql

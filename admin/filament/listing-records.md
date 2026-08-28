@@ -1,4 +1,4 @@
-# Listing records
+# Список записей
 
 > Официальная документация: [Listing records | Filament 5.x](https://filamentphp.com/docs/5.x/resources/listing-records)
 

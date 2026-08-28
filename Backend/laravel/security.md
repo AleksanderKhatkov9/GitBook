@@ -1,4 +1,4 @@
-# Security
+# Безопасность
 
 > Источники: [CSRF](https://laravel.com/docs/13.x/csrf) · [Authentication](https://laravel.com/docs/13.x/authentication) · [Authorization](https://laravel.com/docs/13.x/authorization) · [Validation](https://laravel.com/docs/13.x/validation)
 
@@ -150,30 +150,13 @@ if ($request->user()->cannot('update', $post)) {
 
 ## Валидация
 
-Проверяйте все входящие данные:
+Проверяйте все входящие данные — в контроллере или через Form Request. Подробно: [Валидация](validation.md).
 
 ```php
 $validated = $request->validate([
     'title' => 'required|string|max:255',
     'email' => 'required|email|unique:users',
-    'body'  => 'nullable|string',
 ]);
-```
-
-Или Form Request:
-
-```bash
-php artisan make:request StorePostRequest
-```
-
-```php
-public function rules(): array
-{
-    return [
-        'title' => ['required', 'string', 'max:255'],
-        'body'  => ['required', 'string'],
-    ];
-}
 ```
 
 ## Массовое присвоение
@@ -223,8 +206,8 @@ php artisan key:generate
 | SQL | Eloquent / bindings, не конкатенация |
 | Auth | middleware `auth` на закрытых маршрутах |
 | Policies | проверка прав на ресурсы |
-| Validation | Form Request или `validate()` |
+| Validation | [Валидация](validation.md): Form Request или `validate()` |
 | Mass assignment | `$fillable` / `$guarded` |
 | Secrets | `.env`, `APP_DEBUG=false` на проде |
 
-См. также: [Маршруты](routing.md) · [Контроллеры](controllers.md) · [Eloquent ORM](eloquent.md)
+См. также: [Маршруты](routing.md) · [Контроллеры](controllers.md) · [Валидация](validation.md) · [Eloquent ORM](eloquent.md)

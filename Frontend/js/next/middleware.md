@@ -72,7 +72,7 @@ export function middleware(request) {
 | Цель | Куда |
 |------|------|
 | Vercel | Нативно, middleware на Edge |
-| VPS + PM2 + Nginx | [Laravel + Next.js](../../../devops/laravel-next/README.md) |
+| VPS + PM2 + Nginx | [PM2](../../pm2/README.md), [Laravel + Next.js](../../../devops/laravel-next/README.md) |
 | Docker | `output: 'standalone'` в `next.config` |
 
 ## Чеклист после изучения раздела

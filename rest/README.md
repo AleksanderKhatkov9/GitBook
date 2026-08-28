@@ -25,7 +25,7 @@ DELETE /api/users/1        → удаление
 
 | Раздел | Связь |
 |--------|-------|
-| [Laravel — маршруты](../Backend/laravel/routing.md) | Определение REST API в `routes/api.php` |
+| [Laravel — REST API](../Backend/laravel/api.md) | `routes/api.php`, Sanctum, JSON |
 | [Laravel — контроллеры](../Backend/laravel/controllers.md) | Логика обработки запросов |
 | [JavaScript — сетевые запросы](../Frontend/js/introduction/network.md) | `fetch` на стороне клиента |
 | [Laravel + Next.js](../devops/laravel-next/README.md) | Fullstack: Next.js → Laravel API |

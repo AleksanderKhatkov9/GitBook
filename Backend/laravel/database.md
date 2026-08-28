@@ -1,4 +1,4 @@
-# Database
+# База данных
 
 > Источники: [Database](https://laravel.com/docs/13.x/database) · [Query Builder](https://laravel.com/docs/13.x/queries) · [MongoDB](https://laravel.com/docs/13.x/mongodb) · [Migrations](migrations.md)
 

@@ -26,6 +26,7 @@ JavaScript — язык программирования для веба. Раб
 | [Vue](vue/README.md) | Прогрессивный JS-фреймворк |
 | [React](react/README.md) | Библиотека UI от Meta |
 | [Next.js](next/README.md) | React-фреймворк с SSR |
+| [PM2](../pm2/README.md) | Запуск Next.js на VPS: start, restart, логи, ecosystem |
 
 ## Требования
 

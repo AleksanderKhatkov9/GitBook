@@ -10,9 +10,9 @@ Nova — официальная админ-панель от Laravel на баз
 |----------|----------|
 | [Установка](installation.md) | Официальная и бесплатная установка через Composer |
 | [Документация и ресурсы](documentation.md) | Ссылки на документацию, видео и пакеты |
-| [Поля (Fields)](fields.md) | Редактирование полей, кастомные поля, Trix |
+| [Поля](fields.md) | Редактирование полей, кастомные поля, Trix |
 | [Кастомные компоненты](custom-components.md) | Cards, ServiceProvider, сборка assets, маршруты |
-| [Actions (кнопки)](actions.md) | Создание действий в Nova |
+| [Действия](actions.md) | Создание действий в Nova |
 | [Поиск](search.md) | Поиск по ресурсам и связям |
 | [Кастомизация](customization.md) | NovaServiceProvider, middleware, свои JS/CSS |
 | [Решение проблем](troubleshooting.md) | Роуты, деплой, webpack, загрузка изображений |

@@ -202,6 +202,7 @@
   * [Nginx](devops/nginx/README.md)
   * [Deployer](devops/deployer/README.md)
   * [Laravel + Next.js](devops/laravel-next/README.md)
+  * [VPN Gate](devops/vpn/README.md)
 
 * [REST](rest/README.md)
   * [Postman](rest/postman/README.md)

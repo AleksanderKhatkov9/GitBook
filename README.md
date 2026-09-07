@@ -29,7 +29,7 @@ npm run serve
 | [Frontend](Frontend/README.md)       | JavaScript (Vue, React, Next.js), CSS, HTML, [PM2](Frontend/pm2/README.md)                                                                       |
 | [MySQL](mysql/README.md)             | База данных MySQL                                                                                                                                |
 | [Admin](admin/README.md)             | [Filament](admin/filament/README.md), [Nova](admin/nova/README.md), [Moonshine](admin/moonshine/README.md), [AdminLTE](admin/adminlte/README.md) |
-| [DevOps](devops/README.md)           | Docker, [Laravel Compose](devops/docker/laravel-compose/README.md), Vagrant, Nginx, Deployer, [Laravel + Next.js](devops/laravel-next/README.md) |
+| [DevOps](devops/README.md)           | Docker, [Laravel Compose](devops/docker/laravel-compose/README.md), Vagrant, Nginx, Deployer, [Laravel + Next.js](devops/laravel-next/README.md), [VPN Gate](devops/vpn/README.md) |
 | [Git](git/README.md)                 | Git, GitHub, ветки, команды                                                                                                                      |
 | [REST](rest/README.md)               | REST API, [Postman](rest/postman/README.md) — запросы, коллекции, тесты                                                                          |
 | [Алгоритмы](algorithm/README.md)     | Подготовка к собеседованиям: синтаксис → LeetCode                                                                                                |
@@ -96,7 +96,8 @@ GitBook/
 │   ├── linux/
 │   ├── nginx/
 │   ├── deployer/
-│   └── laravel-next/      ← Laravel + Next.js на одном домене
+│   ├── laravel-next/      ← Laravel + Next.js на одном домене
+│   └── vpn/               ← VPN Gate (SoftEther)
 ├── git/
 ├── rest/                  ← REST API
 │   └── postman/           ← Postman: установка, запросы, тесты

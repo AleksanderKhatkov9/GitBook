@@ -13,6 +13,7 @@
 | [Nginx](nginx/README.md) | Веб-сервер, виртуальные хосты, Laravel |
 | [Deployer](deployer/README.md) | Деплой PHP/Laravel на сервер по SSH |
 | [Laravel + Next.js](laravel-next/README.md) | Fullstack: API + frontend на одном домене |
+| [VPN Gate](vpn/README.md) | Бесплатный публичный VPN (SoftEther), обход блокировок |
 
 ## Когда что использовать
 
@@ -24,5 +25,6 @@
 | Deployer | Деплой Laravel/PHP на VPS по SSH |
 | [PM2](../Frontend/pm2/README.md) + Nginx | Next.js frontend на production-сервере |
 | [PHP-FPM](../Backend/php/php-fpm.md) | Выполнение PHP за Nginx |
+| [VPN Gate](vpn/README.md) | Смена IP / обход блокировок (публичные реле) |
 
 > В примерах Nginx и Linux — PHP **8.3**. Если сайт на 8.1, меняйте имя сокета и сервиса, а не копируйте 8.3 вслепую.

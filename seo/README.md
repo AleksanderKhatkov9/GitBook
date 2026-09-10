@@ -40,6 +40,7 @@ SEO (Search Engine Optimization) — оптимизация сайта для п
 | [Nginx](../devops/nginx/README.md) | Редиректы, gzip, кэш |
 | [Laravel Views](../Backend/laravel/views.md) | Blade-шаблоны |
 | [Laravel + Next.js](../devops/laravel-next/README.md) | SSR для SEO |
+| [Аналитика](../analytics/README.md) | Метрика, GA4, Matomo |
 
 ## Полезные ссылки
 

@@ -252,6 +252,11 @@
   * [4. SEO в Laravel](seo/laravel.md)
   * [5. Инструменты](seo/tools.md)
 
+* [Аналитика](analytics/README.md)
+  * [Яндекс Метрика](analytics/yandex.md)
+  * [Google Analytics](analytics/google.md)
+  * [Matomo](analytics/matomo.md)
+
 * [ИИ](ai/README.md)
   * [Ollama](ai/ollama.md)
   * [Continue](ai/continue.md)

@@ -37,6 +37,7 @@ npm run serve
 | [Карьера](career/README.md)          | [Валютная удалёнка](career/remote-currency.md) — поиск remote с оплатой в USD / EUR                                                              |
 | [Менеджмент](management/README.md)   | [Рабочий день](management/workday.md), [восстановление](management/recovery.md), [не выгорать](management/burnout.md)                             |
 | [SEO](seo/README.md)                 | On-Page, technical, SEO в Laravel                                                                                                                |
+| [Аналитика](analytics/README.md)     | [Яндекс Метрика](analytics/yandex.md), [Google Analytics](analytics/google.md), [Matomo](analytics/matomo.md)                                    |
 | [ИИ](ai/README.md)                   | Ollama, Continue, OpenRouter, Cursor, Claude, Kiro                                                                                               |
 | [Английский](english/README.md)      | Грамматика: времена, части речи, модальные                                                                                                       |
 
@@ -108,6 +109,7 @@ GitBook/
 ├── career/                ← карьера, валютная удалёнка
 ├── management/            ← рабочий день и восстановление
 ├── seo/
+├── analytics/             ← Яндекс Метрика, Google Analytics, Matomo
 ├── english/               ← грамматика английского языка
 ├── ai/                    ← Ollama, Continue, OpenRouter, Cursor, Claude, Kiro
 │

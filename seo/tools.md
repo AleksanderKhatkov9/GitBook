@@ -35,7 +35,7 @@
 
 | URL | [analytics.google.com](https://analytics.google.com/) |
 
-Отслеживание трафика, поведения, конверсий.
+Отслеживание трафика, поведения, конверсий. Подробнее: [Аналитика — Google Analytics](../analytics/google.md) · [Яндекс Метрика](../analytics/yandex.md) · [Matomo](../analytics/matomo.md).
 
 ```html
 <!-- gtag.js — в layout -->

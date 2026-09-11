@@ -59,60 +59,219 @@
 
 ---
 
-## Установка на сервер (без Docker)
+## Установка и настройка Matomo на Linux-сервере
 
-Типичная схема: **Ubuntu 22.04/24.04** + Nginx + MariaDB + PHP-FPM. Команды — от пользователя с `sudo`.
+Типичная схема: **Ubuntu 22.04/24.04** + Nginx + MySQL/MariaDB + PHP-FPM. Команды — от пользователя с `sudo`.
 
-### Обновление системы и пакеты
+### 1. Подготовка сервера
+
+Перед установкой Matomo необходимо подготовить сервер и установить основные компоненты:
+
+* Nginx — веб-сервер;
+* PHP — серверная часть приложения;
+* PHP Extensions — необходимые расширения PHP;
+* MySQL/MariaDB — база данных;
+* системные утилиты для загрузки и распаковки Matomo (`wget`, `unzip`).
+
+Проверить версию операционной системы:
 
 ```bash
-sudo apt update && sudo apt upgrade -y
-
-sudo apt install -y nginx mariadb-server \
-  php-fpm php-mysql php-curl php-gd php-cli php-xml php-mbstring \
-  unzip wget
+lsb_release -a
 ```
 
-Проверьте версию PHP:
+Обновить список пакетов:
+
+```bash
+sudo apt update
+```
+
+Обновить установленные пакеты:
+
+```bash
+sudo apt upgrade -y
+```
+
+---
+
+### 2. Установка Nginx
+
+Если Nginx ещё не установлен:
+
+```bash
+sudo apt install nginx -y
+```
+
+Проверить статус:
+
+```bash
+sudo systemctl status nginx
+```
+
+При необходимости запустить Nginx:
+
+```bash
+sudo systemctl start nginx
+```
+
+Добавить Nginx в автозагрузку:
+
+```bash
+sudo systemctl enable nginx
+```
+
+Проверить конфигурацию:
+
+```bash
+sudo nginx -t
+```
+
+См. также [Nginx](../devops/nginx/README.md).
+
+---
+
+### 3. Установка PHP
+
+Matomo работает через PHP, поэтому необходимо установить PHP и необходимые расширения.
+
+```bash
+sudo apt install php php-fpm php-mysql php-curl php-gd php-cli php-xml php-mbstring php-zip php-bcmath php-intl php-fileinfo -y
+```
+
+Проверить установленную версию PHP:
 
 ```bash
 php -v
 ```
 
-### База данных
+Проверить состояние PHP-FPM (имя сервиса зависит от версии PHP):
+
+```bash
+sudo systemctl status php8.1-fpm
+# или, например: sudo systemctl status php8.3-fpm
+```
+
+> Версия `php8.1-fpm` зависит от PHP на сервере. Для Matomo **6.0** нужен **PHP 8.1+**. Актуальный сокет смотрите в `/run/php/`.
+
+---
+
+### 4. Установка MySQL/MariaDB
+
+Matomo использует базу данных для хранения статистики и настроек.
+
+Если MySQL ещё не установлен:
+
+```bash
+sudo apt install mysql-server -y
+```
+
+Альтернатива — MariaDB:
+
+```bash
+sudo apt install mariadb-server -y
+```
+
+Проверить статус:
+
+```bash
+sudo systemctl status mysql
+# для MariaDB часто: sudo systemctl status mariadb
+```
+
+Добавить в автозагрузку:
+
+```bash
+sudo systemctl enable mysql
+```
+
+---
+
+### 5. Создание базы данных для Matomo
+
+Подключиться к MySQL:
 
 ```bash
 sudo mysql
 ```
 
-В консоли MySQL/MariaDB:
+Создать отдельную базу данных:
 
 ```sql
 CREATE DATABASE matomo CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'matomo'@'localhost' IDENTIFIED BY 'ЗАМЕНИТЕ_НА_СИЛЬНЫЙ_ПАРОЛЬ';
+```
+
+Создать пользователя:
+
+```sql
+CREATE USER 'matomo'@'localhost' IDENTIFIED BY 'СЛОЖНЫЙ_ПАРОЛЬ';
+```
+
+Предоставить пользователю минимально необходимые права:
+
+```sql
 GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, DROP, ALTER,
       CREATE TEMPORARY TABLES, LOCK TABLES ON matomo.* TO 'matomo'@'localhost';
+```
+
+Обновить права и выйти:
+
+```sql
 FLUSH PRIVILEGES;
 EXIT;
 ```
 
-### Скачивание Matomo
+После этого у Matomo будут отдельная база данных и отдельный пользователь.
 
-Скачивайте **только** с официального источника ([builds.matomo.org](https://builds.matomo.org/)):
+---
+
+### 6. Загрузка Matomo
+
+Скачивайте **только** с официального источника ([builds.matomo.org](https://builds.matomo.org/)).
+
+Перейти в директорию сайтов:
 
 ```bash
-cd /tmp
-wget https://builds.matomo.org/matomo.zip
-sudo unzip matomo.zip -d /var/www/
-sudo chown -R www-data:www-data /var/www/matomo
+cd /var/www/
+```
+
+Скачать архив:
+
+```bash
+sudo wget https://builds.matomo.org/matomo.zip
+```
+
+Если `wget` не установлен:
+
+```bash
+sudo apt install wget -y
+```
+
+Распаковать архив:
+
+```bash
+sudo unzip matomo.zip
+```
+
+Если `unzip` отсутствует:
+
+```bash
+sudo apt install unzip -y
+```
+
+После распаковки должна появиться директория:
+
+```text
+/var/www/matomo
 ```
 
 Рекомендуемый URL:
 
-- поддомен: `https://analytics.example.com/`
-- или путь: `https://example.com/matomo/`
+* поддомен: `https://analytics.example.com/` или `https://matomo.example.com/`
+* локально: `http://matomo.loc/`
+* либо путь: `https://example.com/matomo/`
 
-### Права на каталоги
+---
+
+### 7. Настройка прав доступа
 
 Веб-сервер должен читать все файлы; запись нужна в основном в `tmp/` и `config/`:
 
@@ -125,14 +284,23 @@ sudo chmod -R 775 /var/www/matomo/tmp /var/www/matomo/config
 
 Подробнее: [права веб-сервера](https://matomo.org/faq/on-premise/how-to-configure-web-server-permissions/).
 
-### Nginx (пример для поддомена)
+---
 
-Файл `/etc/nginx/sites-available/matomo`:
+### 8. Создание конфигурации Nginx
+
+Создать конфигурационный файл:
+
+```bash
+sudo nano /etc/nginx/sites-available/matomo
+```
+
+Пример конфигурации:
 
 ```nginx
 server {
     listen 80;
-    server_name analytics.example.com;
+    server_name matomo.example.com;
+
     root /var/www/matomo;
     index index.php;
 
@@ -145,8 +313,8 @@ server {
 
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
-        # путь к сокету зависит от версии PHP, например php8.3-fpm
-        fastcgi_pass unix:/run/php/php8.3-fpm.sock;
+        # путь к сокету зависит от версии PHP
+        fastcgi_pass unix:/run/php/php8.1-fpm.sock;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
     }
 
@@ -156,26 +324,96 @@ server {
         return 403;
     }
 
+    location ~ /\.ht {
+        deny all;
+    }
+
     location ~ /\. {
         deny all;
     }
 }
 ```
 
-Активация:
+Замените `matomo.example.com` на используемый домен или локальный адрес (`matomo.loc`).
+
+Проверить версию PHP-FPM и сокет:
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/matomo /etc/nginx/sites-enabled/
-sudo nginx -t && sudo systemctl reload nginx
+ls /run/php/
 ```
 
-См. также [Nginx](../devops/nginx/README.md).
+Например, для PHP 8.1:
 
-### HTTPS (Let's Encrypt)
+```text
+/run/php/php8.1-fpm.sock
+```
+
+---
+
+### 9. Включение конфигурации Matomo
+
+Создать символическую ссылку из `sites-available` в `sites-enabled`:
+
+```bash
+sudo ln -s /etc/nginx/sites-available/matomo /etc/nginx/sites-enabled/matomo
+```
+
+Проверить конфигурацию Nginx:
+
+```bash
+sudo nginx -t
+```
+
+Если ошибок нет, перезагрузить Nginx:
+
+```bash
+sudo systemctl reload nginx
+```
+
+При необходимости проверить активные конфигурации:
+
+```bash
+ls -la /etc/nginx/sites-enabled/
+```
+
+---
+
+### 10. Настройка локального домена
+
+Если Matomo устанавливается для локального использования (например `matomo.loc`), добавьте соответствие домена IP-адресу сервера.
+
+На Linux-клиенте:
+
+```bash
+sudo nano /etc/hosts
+```
+
+Для локального сервера:
+
+```text
+127.0.0.1 matomo.loc
+```
+
+Если Matomo на удалённом сервере:
+
+```text
+IP_СЕРВЕРА matomo.loc
+```
+
+Проверить разрешение имени:
+
+```bash
+ping matomo.loc
+curl http://matomo.loc
+```
+
+---
+
+### 11. HTTPS (Let's Encrypt) — для продакшена
 
 ```bash
 sudo apt install -y certbot python3-certbot-nginx
-sudo certbot --nginx -d analytics.example.com
+sudo certbot --nginx -d matomo.example.com
 ```
 
 После SSL в `config/config.ini.php` (появится после установки) обычно задают:
@@ -186,20 +424,100 @@ force_ssl = 1
 assume_secure_protocol = 1
 ```
 
-### Мастер установки в браузере
+---
 
-1. Откройте `https://analytics.example.com/`.
-2. **System Check** — исправьте все ошибки (расширения PHP, права и т.д.).
-3. **Database** — укажите:
-   - Server: `127.0.0.1` или `localhost`
-   - Login: `matomo`
-   - Password: ваш пароль
-   - Database: `matomo`
-4. Создайте **Super User** (сохраните логин/пароль).
-5. Добавьте первый сайт (или приложение) для трекинга.
-6. Скопируйте JavaScript tracking code (для сайта) или параметры для SDK (для Android).
+### 12. Запуск веб-установки Matomo
 
-### Auto-archiving (cron) — обязательно для продакшена
+Открыть Matomo в браузере:
+
+```text
+http://matomo.loc
+```
+
+или:
+
+```text
+https://matomo.example.com
+```
+
+Откроется мастер установки. На первом этапе Matomo проверит системные требования:
+
+* версию PHP;
+* необходимые PHP-расширения;
+* права доступа к файлам;
+* наличие необходимых функций PHP;
+* возможность работы с базой данных.
+
+Если все требования выполнены, можно продолжить установку.
+
+---
+
+### 13. Подключение базы данных
+
+На этапе настройки базы данных указать параметры, созданные ранее:
+
+| Поле | Значение |
+|------|----------|
+| Database Server | `localhost` или `127.0.0.1` |
+| Database Username | `matomo` |
+| Database Password | `СЛОЖНЫЙ_ПАРОЛЬ` |
+| Database Name | `matomo` |
+| Database Table Prefix | `matomo_` |
+
+После заполнения формы Matomo проверит подключение к MySQL и создаст необходимые таблицы.
+
+---
+
+### 14. Создание администратора
+
+Создать административную учётную запись (Super User):
+
+* логин администратора;
+* пароль;
+* email.
+
+Эта учётная запись используется для входа в административную панель Matomo. Сохраните логин и пароль.
+
+---
+
+### 15. Добавление сайта в Matomo
+
+После создания администратора добавить сайт, статистику которого требуется отслеживать:
+
+* название сайта;
+* URL сайта;
+* часовой пояс;
+* валюта;
+* дополнительные параметры отслеживания.
+
+Matomo выдаст JavaScript-код отслеживания. Пример:
+
+```html
+<script>
+var _paq = window._paq = window._paq || [];
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+
+(function() {
+    var u="https://matomo.example.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+
+    var d=document, g=d.createElement('script'),
+        s=d.getElementsByTagName('script')[0];
+
+    g.async=true;
+    g.src=u+'matomo.js';
+    s.parentNode.insertBefore(g,s);
+})();
+</script>
+```
+
+Код добавить на отслеживаемый сайт, обычно перед закрывающим тегом `</head>`.
+
+---
+
+### 16. Auto-archiving (cron) — обязательно для продакшена
 
 Без cron Matomo пересчитывает отчёты при каждом открытии дашборда — это нагружает БД.
 
@@ -210,13 +528,67 @@ sudo crontab -u www-data -e
 Добавьте (путь и URL замените):
 
 ```cron
-5 * * * * /usr/bin/php /var/www/matomo/console core:archive --url=https://analytics.example.com/ > /dev/null 2>&1
+5 * * * * /usr/bin/php /var/www/matomo/console core:archive --url=https://matomo.example.com/ > /dev/null 2>&1
 ```
 
 Затем в UI: **Administration → System → General settings** → снимите галочку  
 **Archive reports when viewed from the browser**.
 
 Документация: [auto-archiving](https://matomo.org/faq/on-premise/how-to-set-up-auto-archiving-of-your-reports/).
+
+---
+
+### 17. Проверка работы
+
+После установки проверить:
+
+1. Открывается ли Matomo в браузере.
+2. Работает ли авторизация.
+3. Подключается ли Matomo к базе данных.
+4. Загружается ли административная панель.
+5. Корректно ли работает JavaScript-код отслеживания.
+6. Появляются ли посещения в статистике (**Visitors → Real-time**).
+7. Нет ли ошибок в Nginx.
+8. Нет ли ошибок PHP-FPM.
+
+Логи Nginx:
+
+```bash
+sudo tail -f /var/log/nginx/error.log
+# или свой файл: /var/log/nginx/matomo.error.log
+```
+
+Логи PHP-FPM:
+
+```bash
+sudo journalctl -u php8.1-fpm -f
+```
+
+Статус сервисов:
+
+```bash
+sudo systemctl status nginx
+sudo systemctl status php8.1-fpm
+sudo systemctl status mysql
+```
+
+Все необходимые сервисы должны быть в состоянии `active (running)`.
+
+---
+
+### 18. Итог классической установки
+
+После выполнения шагов на сервере должны быть настроены:
+
+* Matomo;
+* Nginx;
+* PHP-FPM;
+* MySQL/MariaDB;
+* отдельная база данных и пользователь БД;
+* виртуальный хост Nginx;
+* административная учётная запись Matomo;
+* отслеживаемый сайт и JavaScript-код аналитики;
+* (для продакшена) HTTPS и cron `core:archive`.
 
 ### Обновление (без Docker)
 

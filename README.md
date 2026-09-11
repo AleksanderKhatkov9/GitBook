@@ -26,6 +26,7 @@ npm run serve
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [GitBook](gitbook/README.md)         | Установка, создание страниц, меню                                                                                                                |
 | [Backend](Backend/README.md)         | [PHP](Backend/php/README.md), [PHP-FPM](Backend/php/php-fpm.md), [Laravel](Backend/laravel/README.md)                                             |
+| [Android](Android/README.md)         | [Kotlin](Android/kotlin/README.md), [Java](Android/java/README.md), сборка Gradle, [AOSP](Android/aosp.md)                                      |
 | [Frontend](Frontend/README.md)       | JavaScript (Vue, React, Next.js), CSS, HTML, [PM2](Frontend/pm2/README.md)                                                                       |
 | [MySQL](mysql/README.md)             | База данных MySQL                                                                                                                                |
 | [Admin](admin/README.md)             | [Filament](admin/filament/README.md), [Nova](admin/nova/README.md), [Moonshine](admin/moonshine/README.md), [AdminLTE](admin/adminlte/README.md) |
@@ -76,6 +77,9 @@ GitBook/
 ├── Backend/               ← PHP, PHP-FPM, Laravel
 │   ├── php/
 │   └── laravel/
+├── Android/               ← Android: Kotlin, Java, сборка, AOSP
+│   ├── kotlin/
+│   └── java/
 ├── Frontend/              ← JavaScript и CSS
 │   ├── js/
 │   │   ├── vue/

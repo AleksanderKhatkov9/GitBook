@@ -245,6 +245,12 @@
   * [3. Практика Easy → Medium](algorithm/stage-3.md)
   * [4. Продвинутый уровень](algorithm/stage-4.md)
 
+* [Собеседования](interview/README.md)
+  * [PHP Core](interview/php.md)
+  * [MySQL](interview/mysql.md)
+  * [PHP/Laravel подготовка](interview/php-laravel.md)
+  * [Laravel](interview/laravel.md)
+
 * [Курсы](courses/README.md)
   * [Бесплатные курсы](courses/free/README.md)
     * [RS School](courses/free/rs-school.md)

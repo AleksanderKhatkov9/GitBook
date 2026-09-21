@@ -34,6 +34,7 @@ npm run serve
 | [Git](git/README.md)                 | Git, GitHub, ветки, команды                                                                                                                      |
 | [REST](rest/README.md)               | REST API, [Postman](rest/postman/README.md) — запросы, коллекции, тесты                                                                          |
 | [Алгоритмы](algorithm/README.md)     | Подготовка к собеседованиям: синтаксис → LeetCode                                                                                                |
+| [Собеседования](interview/README.md) | [PHP](interview/php.md), [MySQL](interview/mysql.md), [PHP/Laravel](interview/php-laravel.md), [Laravel](interview/laravel.md)                     |
 | [Курсы](courses/README.md)           | [Бесплатные](courses/free/README.md), [Платные](courses/paid/README.md)                                                                          |
 | [Карьера](career/README.md)          | [Валютная удалёнка](career/remote-currency.md) — поиск remote с оплатой в USD / EUR                                                              |
 | [Менеджмент](management/README.md)   | [Рабочий день](management/workday.md), [восстановление](management/recovery.md), [не выгорать](management/burnout.md)                             |
@@ -107,6 +108,7 @@ GitBook/
 ├── rest/                  ← REST API
 │   └── postman/           ← Postman: установка, запросы, тесты
 ├── algorithm/             ← подготовка к собеседованиям
+├── interview/             ← вопросы PHP Core + MySQL
 ├── courses/               ← курсы
 │   ├── free/              ← бесплатные (RS School, Stepik)
 │   └── paid/              ← платные (TeachMeSkills, Stepik)

@@ -88,4 +88,5 @@ php solution.php
 | [ООП](../Backend/php/OOP/README.md) | Классы для собеседований |
 | [SOLID](../Backend/php/SOLID/README.md) | Принципы проектирования |
 | [Курсы — LeetCode / Codewars](../courses/free/README.md) | Дополнительная практика |
+| [Собеседования](../interview/README.md) | Вопросы PHP Core + MySQL |
 | [Карьера](../career/README.md) | Поиск работы после подготовки |

@@ -12,6 +12,7 @@
 |--------|-------|
 | [Английский](../english/README.md) | Английский для собеседований и переписки |
 | [Алгоритмы](../algorithm/README.md) | Подготовка к coding interview |
+| [Собеседования](../interview/README.md) | Вопросы PHP Core + MySQL |
 | [Курсы](../courses/README.md) | Учёба и практика |
 | [Git](../git/README.md) | GitHub-профиль и Pull Request |
 | [Менеджмент](../management/README.md) | Рабочий день и восстановление после кода |

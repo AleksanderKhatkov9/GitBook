@@ -46,7 +46,36 @@ npm run serve
 npm run build
 ```
 
-Команда сбрасывает кэш HonKit (`--reload`) и полностью пересобирает сайт в `_book/`. Эту папку можно залить на любой хостинг (GitHub Pages, Netlify, обычный веб-сервер).
+Команда сбрасывает кэш HonKit (`--reload`) и полностью пересобирает сайт в `_book/`. Для этой книги вручную заливать `_book/` не нужно: публикация идёт через GitHub Actions.
+
+## Публикация на GitHub Pages
+
+Сайт собирается и выкладывается workflow-файлом [`.github/workflows/pages.yml`](../.github/workflows/pages.yml).
+
+Адрес книги: **[https://aleksanderkhatkov9.github.io/GitBook/](https://aleksanderkhatkov9.github.io/GitBook/)**
+
+Сборка запускается сама при `git push` в ветку **`main`**. Пуш в `develop` сайт не обновляет. Запуск вручную тоже есть: в репозитории на GitHub вкладка **Actions** → **Deploy GitHub Pages** → **Run workflow**.
+
+Workflow делает два шага:
+
+| Шаг | Что происходит |
+|-----|----------------|
+| **build** | Скачивает репозиторий, ставит Node.js 20, выполняет `npm ci` и `npm run build`, собирает HTML в `_book/` |
+| **deploy** | Публикует папку `_book/` в среду `github-pages` |
+
+Среда `github-pages` принимает выкладку только с ветки по умолчанию `main`. Поэтому в `pages.yml` указано `branches: [main]`.
+
+Локальный `npm run serve` нужен только чтобы смотреть правки на своём компьютере. Папку `_book/` в git не коммитят: она в `.gitignore`, на сервере её создаёт Actions.
+
+Чтобы опубликовать правки из `develop`:
+
+```bash
+git checkout main
+git merge develop
+git push origin main
+```
+
+После пуша откройте вкладку **Actions**. Шаг **build** идёт около 2 минут и почти ничего не пишет в лог — это нормально. Когда **build** и **deploy** станут зелёными, сайт обновится по ссылке выше.
 
 ## Полезные команды
 

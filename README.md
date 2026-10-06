@@ -134,6 +134,16 @@ GitBook/
 
 ---
 
+## Публикация
+
+Сайт собирается автоматически при пуше в ветку `main`. Workflow — [`.github/workflows/pages.yml`](.github/workflows/pages.yml): шаг **build** запускает `npm run build`, шаг **deploy** выкладывает `_book/` на GitHub Pages.
+
+Книга: **[https://aleksanderkhatkov9.github.io/GitBook/](https://aleksanderkhatkov9.github.io/GitBook/)**
+
+Пуш в `develop` сайт не обновляет. Сначала влейте ветку в `main` и запушьте её. Подробнее: [Установка GitBook](gitbook/installation.md).
+
+---
+
 ## Полезные команды
 
 

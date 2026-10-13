@@ -2,7 +2,7 @@
 
 > Источники: [Metanit — создание API, JSON и AJAX](https://metanit.com/web/nodejs/) · [Express routing](https://expressjs.com/en/guide/routing.html) · [HTTP](https://nodejs.org/docs/latest/api/http.html)
 
-API отдаёт данные, не HTML. Клиент — страница с [fetch](../js/introduction/network.md), мобильное приложение или другой сервер. Ниже маленький список пользователей в памяти: так виден контракт запросов. Хранение в базе — [MongoDB](mongodb.md) и [MySQL](mysql.md).
+API отдаёт данные, не HTML. Клиент — страница с [fetch](../introduction/network.md), мобильное приложение или другой сервер. Ниже маленький список пользователей в памяти: так виден контракт запросов. Хранение в базе — [MongoDB](mongodb.md) и [MySQL](mysql.md).
 
 ## Контракт
 
@@ -115,7 +115,7 @@ if (!response.ok) {
 const user = await response.json();
 ```
 
-`response.ok` ложно для 4xx и 5xx. `fetch` в этом случае исключение не бросает — статус проверяют сами. Подробнее про `fetch`: [Сетевые запросы](../js/introduction/network.md).
+`response.ok` ложно для 4xx и 5xx. `fetch` в этом случае исключение не бросает — статус проверяют сами. Подробнее про `fetch`: [Сетевые запросы](../introduction/network.md).
 
 ## Другой источник страницы
 

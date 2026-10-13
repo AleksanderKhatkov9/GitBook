@@ -27,7 +27,7 @@ npm run serve
 | [GitBook](gitbook/README.md)         | Установка, создание страниц, меню                                                                                                                |
 | [Backend](Backend/README.md)         | [PHP](Backend/php/README.md), [PHP-FPM](Backend/php/php-fpm.md), [Laravel](Backend/laravel/README.md)                                             |
 | [Android](Android/README.md)         | [Kotlin](Android/kotlin/README.md), [Java](Android/java/README.md), сборка Gradle, [AOSP](Android/aosp.md)                                      |
-| [Frontend](Frontend/README.md)       | JavaScript (Vue, React, Next.js), [Node.js](Frontend/node/README.md), CSS, HTML, [PM2](Frontend/pm2/README.md)                                    |
+| [Frontend](Frontend/README.md)       | JavaScript (Vue, React, Next.js), [Node.js](Frontend/js/node/README.md), CSS, HTML, [PM2](Frontend/pm2/README.md)                                    |
 | [MySQL](mysql/README.md)             | База данных MySQL                                                                                                                                |
 | [Admin](admin/README.md)             | [Filament](admin/filament/README.md), [Nova](admin/nova/README.md), [Moonshine](admin/moonshine/README.md), [AdminLTE](admin/adminlte/README.md) |
 | [DevOps](devops/README.md)           | Docker, [Laravel Compose](devops/docker/laravel-compose/README.md), Vagrant, Nginx, Deployer, [Laravel + Next.js](devops/laravel-next/README.md), [VPN Gate](devops/vpn/README.md) |

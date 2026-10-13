@@ -1,7 +1,7 @@
 # 12. MySQL и Sequelize
 
 > Источники: [Metanit — MySQL и Sequelize](https://metanit.com/web/nodejs/) · [mysql2](https://sidorares.github.io/node-mysql2/docs) · [Sequelize](https://sequelize.org/docs/v6/)  
-> Сам язык SQL: [MySQL](../../mysql/README.md)
+> Сам язык SQL: [MySQL](../../../mysql/README.md)
 
 Из Node.js к MySQL ходят двумя способами. `mysql2` отправляет SQL, который вы написали. Sequelize описывает таблицы моделями и собирает SQL сам. Запросы `SELECT`, индексы и устройство базы — в разделе MySQL этой книги. Здесь только вызов из приложения.
 

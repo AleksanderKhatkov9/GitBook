@@ -3,7 +3,7 @@
 > Руководства: [learn.javascript.ru](https://learn.javascript.ru/) · [metanit.com — JavaScript](https://metanit.com/web/javascript/) · [W3Schools — JS](https://www.w3schools.com/js/default.asp)  
 > Справочник: [MDN JavaScript](https://developer.mozilla.org/ru/docs/Web/JavaScript)
 
-JavaScript — язык программирования для веба. Работает в браузере, на сервере ([Node.js](../node/README.md)) и в мобильных приложениях.
+JavaScript — язык программирования для веба. Работает в браузере, на сервере ([Node.js](node/README.md)) и в мобильных приложениях.
 
 ## Разделы
 
@@ -26,12 +26,12 @@ JavaScript — язык программирования для веба. Раб
 | [Vue](vue/README.md) | Прогрессивный JS-фреймворк |
 | [React](react/README.md) | Библиотека UI от Meta |
 | [Next.js](next/README.md) | React-фреймворк с SSR |
-| [Node.js](../node/README.md) | Сервер на JavaScript: модули, HTTP, Express |
+| [Node.js](node/README.md) | Сервер на JavaScript: модули, HTTP, Express |
 | [PM2](../pm2/README.md) | Запуск Next.js на VPS: start, restart, логи, ecosystem |
 
 ## Требования
 
-- [Node.js](../node/README.md) LTS — среда выполнения и инструменты сборки
+- [Node.js](node/README.md) LTS — среда выполнения и инструменты сборки
 - Современный браузер с поддержкой ES2020+
 
 ```bash

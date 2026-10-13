@@ -3,9 +3,9 @@
 > Руководство: [Metanit — Node.js](https://metanit.com/web/nodejs/)  
 > Справочник: [About this documentation](https://nodejs.org/docs/latest/api/documentation.html) · [nodejs.org](https://nodejs.org/)
 
-Node.js — среда выполнения JavaScript вне браузера. На ней работают HTTP-серверы, CLI, сборщики и [Next.js](../js/next/README.md). Язык тот же, что в [разделе JavaScript](../js/README.md): другой набор встроенных модулей и нет DOM.
+Node.js — среда выполнения JavaScript вне браузера. На ней работают HTTP-серверы, CLI, сборщики и [Next.js](../next/README.md). Язык тот же, что в [разделе JavaScript](../README.md): другой набор встроенных модулей и нет DOM.
 
-На сервере процесс обычно держит [PM2](../pm2/README.md), снаружи — [Nginx](../../devops/nginx/README.md).
+На сервере процесс обычно держит [PM2](../../pm2/README.md), снаружи — [Nginx](../../../devops/nginx/README.md).
 
 ## Справочник раздела
 
@@ -75,7 +75,7 @@ npm -v
 
 | Раздел | Зачем |
 |--------|--------|
-| [JavaScript](../js/README.md) | Язык: типы, функции, Promise, модули в браузере |
-| [Next.js](../js/next/README.md) | Приложение на Node.js с React |
-| [PM2](../pm2/README.md) | Держать процесс запущенным на VPS |
-| [MySQL](../../mysql/README.md) | Сам SQL; здесь только драйвер из Node.js |
+| [JavaScript](../README.md) | Язык: типы, функции, Promise, модули в браузере |
+| [Next.js](../next/README.md) | Приложение на Node.js с React |
+| [PM2](../../pm2/README.md) | Держать процесс запущенным на VPS |
+| [MySQL](../../../mysql/README.md) | Сам SQL; здесь только драйвер из Node.js |

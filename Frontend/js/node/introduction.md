@@ -15,9 +15,9 @@ Node.js — среда выполнения JavaScript на движке V8. П�
 | Модули | `<script type="module">` | CommonJS и ES-модули |
 | Типичная задача | Интерфейс | API, CLI, SSR, сборка |
 
-Сборщики (Vite) и [Next.js](../js/next/README.md) — тоже процессы Node.js. Запуск Next.js на сервере: [PM2](../pm2/README.md).
+Сборщики (Vite) и [Next.js](../next/README.md) — тоже процессы Node.js. Запуск Next.js на сервере: [PM2](../../pm2/README.md).
 
-Нужны основы [JavaScript](../js/README.md): переменные, функции, объекты, Promise. Без этого сначала глава [Введение в JavaScript](../js/introduction/introduction.md).
+Нужны основы [JavaScript](../README.md): переменные, функции, объекты, Promise. Без этого сначала глава [Введение в JavaScript](../introduction/introduction.md).
 
 ## Цикл событий
 
@@ -25,7 +25,7 @@ JavaScript в одном процессе Node.js выполняется в од
 
 Долгие операции ввода-вывода (файл, сокет, DNS) уходят в libuv. Когда они готовы, колбэк или Promise возвращается в очередь, и цикл событий его вызывает. Поэтому сервер может держать много соединений, не создавая поток на каждый запрос.
 
-Следствие: `readFileSync` и тяжёлый цикл `while` останавливают обработку всех запросов. Для файлов и сети берите асинхронные функции. Тяжёлый CPU-расчёт выносят в [worker threads](https://nodejs.org/docs/latest/api/worker_threads.html) или в отдельный процесс — на сервере это часто делает [PM2 в режиме cluster](../pm2/README.md).
+Следствие: `readFileSync` и тяжёлый цикл `while` останавливают обработку всех запросов. Для файлов и сети берите асинхронные функции. Тяжёлый CPU-расчёт выносят в [worker threads](https://nodejs.org/docs/latest/api/worker_threads.html) или в отдельный процесс — на сервере это часто делает [PM2 в режиме cluster](../../pm2/README.md).
 
 ## Версии
 

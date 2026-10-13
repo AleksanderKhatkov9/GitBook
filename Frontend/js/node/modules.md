@@ -2,7 +2,7 @@
 
 > Источники: [Metanit — глава 2](https://metanit.com/web/nodejs/) · [CommonJS](https://nodejs.org/docs/latest/api/modules.html) · [ECMAScript modules](https://nodejs.org/docs/latest/api/esm.html) · [Globals](https://nodejs.org/docs/latest/api/globals.html) · [Process](https://nodejs.org/docs/latest/api/process.html)
 
-Файл в Node.js — модуль. У него своя область видимости: переменная из `user.js` не видна в `app.js`, пока её не экспортировали. Так же устроены [ES-модули в браузере](../js/introduction/modules-storage.md), но загрузчик другой.
+Файл в Node.js — модуль. У него своя область видимости: переменная из `user.js` не видна в `app.js`, пока её не экспортировали. Так же устроены [ES-модули в браузере](../introduction/modules-storage.md), но загрузчик другой.
 
 В Node.js два формата. Новые примеры в этом разделе — ESM.
 

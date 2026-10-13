@@ -2,7 +2,7 @@
 
 > Официальная документация: [Process Management](https://pm2.keymetrics.io/docs/usage/process-management/) · [Quick Start](https://pm2.keymetrics.io/docs/usage/quick-start/) · [pm2.keymetrics.io](https://pm2.keymetrics.io/)
 
-PM2 — менеджер процессов для Node.js. Держит приложение запущенным в фоне, перезапускает при падении, пишет логи и позволяет управлять несколькими процессами с одной машины.
+PM2 — менеджер процессов для [Node.js](../node/README.md). Держит приложение запущенным в фоне, перезапускает при падении, пишет логи и позволяет управлять несколькими процессами с одной машины.
 
 На production Next.js обычно запускают через PM2, а снаружи ставят [Nginx](../../devops/nginx/README.md) как reverse proxy. Полный стек Laravel + Next.js: [Laravel + Next.js](../../devops/laravel-next/README.md).
 

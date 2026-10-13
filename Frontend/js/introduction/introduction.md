@@ -124,6 +124,8 @@ class UserAccount {}          // PascalCase для классов
 
 ### В Node.js
 
+Сервер и CLI на том же языке: [Node.js](../../node/README.md).
+
 ```bash
 node app.js
 ```

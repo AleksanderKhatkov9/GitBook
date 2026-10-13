@@ -101,8 +101,8 @@ Are you free? — Yes, I am. / No, I'm not.
 
 ### Маркеры
 
-*always, usually, often, regularly, sometimes, seldom, rarely, never*  
-*every day / week / month, twice a week, from time to time*  
+*always, usually, often, regularly, sometimes, seldom, rarely, hardly ever, never*  
+*every day / week / month, twice a week, once a week, from time to time*  
 *on Mondays, at the weekend, at 7 o'clock* (расписание)
 
 ```
@@ -113,6 +113,33 @@ How often do you review PRs?
 The train leaves at 9.
 Nobody knows the root cause.   ← отрицательное слово, глагол без don't
 ```
+
+### Куда ставить частотность
+
+Наречие стоит **перед** смысловым глаголом и **после** *be*.  
+Выражение частотности обычно стоит **в конце** фразы.
+
+| Тип | Примеры | Место |
+|-----|---------|--------|
+| Наречие | always, usually, often, sometimes, hardly ever, never, only | перед глаголом / после *be* |
+| Выражение | every day, once a week, twice a month | в конце |
+
+```
+She usually has cereal for breakfast.   ← перед глаголом
+I'm never late for work.                ← после be
+We only eat out about once a month.     ← only перед глаголом, once a month в конце
+```
+
+### Порядок слов в вопросе
+
+Смысловой глагол в вопросе всегда в **V1**. В English File это схема **ASI** и **QuASI**:
+
+| Схема | Порядок | Пример |
+|-------|---------|--------|
+| ASI | Auxiliary + Subject + Infinitive | **Do** you **know** David? |
+| QuASI | Question word + ASI | **What time does** the film **start**? |
+
+*Does the supermarket open on Sundays?* — *does* перед подлежащим, *open* без *-s*.
 
 ---
 
@@ -143,7 +170,7 @@ Nobody knows the root cause.   ← отрицательное слово, гла
 | Случай | Пример |
 |--------|--------|
 | Действие **прямо сейчас** | I **am reading** the logs. |
-| Временная ситуация *around now* | She **is staying** with friends this week. |
+| Временная ситуация *around now* (не привычка) | She **is staying** with friends this week. |
 | Зафиксированный план (время/место известны) | We **are meeting** tomorrow at 6. |
 | Меняющаяся ситуация | The codebase **is growing** fast. |
 | Раздражение + *always / constantly* | He **is always interrupting** me. |
@@ -160,17 +187,45 @@ Look! The build is failing.
 You're always pushing without tests.
 ```
 
-### Stative verbs (обычно не Continuous)
+### Action и non-action глаголы
 
-Состояние, а не процесс: *know, like, love, want, need, believe, understand, belong, own, seem, prefer, remember, forget, mean*.
+Глагол **действия** (action) бывает и в Simple, и в Continuous: форма зависит от смысла — привычка или процесс.
 
 ```
-I know the answer.     ✓
-I am knowing…          ✗
-I need help right now. ✓
+I'm making lunch.                     ← сейчас, процесс
+I usually make lunch at the weekend.  ← регулярно
+What are you looking for? — My keys.
 ```
 
-Часть глаголов меняет смысл: *I'm thinking about it* (обдумываю) vs *I think it's a bug* (мнение).
+Глагол **состояния** (non-action, stative) описывает не действие, а чувство, мнение, обладание, отношение. Его обычно **не** ставят в Continuous, даже если имеется в виду «сейчас».
+
+Частые non-action: *agree, be, believe, belong, depend, forget, hate, hear, know, like, love, matter, mean, need, prefer, realize, recognize, remember, seem, suppose, want*.
+
+Глаголы восприятия тоже обычно non-action: *look, smell, taste, sound*.
+
+```
+I need them now.       ✓
+I'm needing them now.  ✗
+It smells delicious.
+I love pasta.
+I know the answer.
+```
+
+### Один глагол — два смысла
+
+У части глаголов есть и действие, и состояние. Continuous — когда это **действие**, Simple — когда **состояние**.
+
+| Глагол | Действие → Continuous | Состояние → Simple |
+|--------|----------------------|--------------------|
+| have | I can't talk. I'm **having** lunch. | I **have** a cat. (владение) |
+| think | What **are** you **thinking** about? | I **think** this music is great. (мнение) |
+
+```
+I'm thinking about the bug.   ← обдумываю
+I think it's a bug.           ← мнение
+I'm having lunch.             ← ем
+I have a cat.                 ← владение
+```
 
 ---
 

@@ -86,6 +86,46 @@ ping google.com
 netstat -tulpn
 ```
 
+## Laravel: права на `storage`
+
+Nginx и PHP-FPM работают от пользователя `www-data`. Laravel пишет логи, сессии, кэш и загрузки в `storage/`, а кэш конфига и маршрутов — в `bootstrap/cache/`. Если владелец другой, в логе будет `Permission denied`, а сайт ответит 500.
+
+Перейдите в корень проекта и отдайте его веб-серверу:
+
+```bash
+cd /var/www/project
+sudo chown -R www-data:www-data .
+sudo chmod -R 775 storage bootstrap/cache
+```
+
+`sudo chown -R www-data:www-data .` рекурсивно (`-R`) делает владельцем текущий каталог и всё внутри пользователя `www-data` и ту же группу. Точка — каталог, в котором вы находитесь, поэтому команда запускается из корня Laravel, а не из `storage/`.
+
+`chmod -R 775` даёт владельцу и группе запись в каталоги, куда PHP должен писать.
+
+| Каталог | Что туда пишет Laravel |
+| ------- | ---------------------- |
+| `storage/logs/` | `laravel.log` |
+| `storage/framework/cache/` | файловый кэш |
+| `storage/framework/sessions/` | сессии |
+| `storage/framework/views/` | скомпилированный Blade |
+| `storage/app/` | загрузки |
+| `bootstrap/cache/` | кэш конфига и маршрутов |
+
+Проверка:
+
+```bash
+ls -ld storage bootstrap/cache
+# drwxrwxr-x www-data www-data storage
+```
+
+Публичные файлы из `storage/app/public` отдаются через симлинк:
+
+```bash
+php artisan storage:link
+```
+
+Он создаёт `public/storage` → `storage/app/public`. Подробнее: [структура Laravel](../../Backend/laravel/structure.md) · [PHP-FPM](../../Backend/php/php-fpm.md).
+
 ## Пакетный менеджер (Ubuntu/Debian)
 
 ```bash

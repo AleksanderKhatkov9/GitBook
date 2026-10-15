@@ -25,7 +25,7 @@ npm run serve
 | Раздел                               | Описание                                                                                                                                         |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [GitBook](gitbook/README.md)         | Установка, создание страниц, меню                                                                                                                |
-| [Backend](Backend/README.md)         | [PHP](Backend/php/README.md), [PHP-FPM](Backend/php/php-fpm.md), [Laravel](Backend/laravel/README.md)                                             |
+| [Backend](Backend/README.md)         | [PHP](Backend/php/README.md), [PHP-FPM](Backend/php/php-fpm.md), [Go](Backend/go/README.md), [Python](Backend/python/README.md), [Laravel](Backend/laravel/README.md), [Symfony](Backend/symfony/README.md), [Yii](Backend/yii/README.md) |
 | [Android](Android/README.md)         | [Kotlin](Android/kotlin/README.md), [Java](Android/java/README.md), сборка Gradle, [AOSP](Android/aosp.md)                                      |
 | [Frontend](Frontend/README.md)       | JavaScript (Vue, React, Next.js), [Node.js](Frontend/js/node/README.md), CSS, HTML, [PM2](Frontend/pm2/README.md)                                    |
 | [MySQL](mysql/README.md)             | База данных MySQL                                                                                                                                |
@@ -75,9 +75,13 @@ GitBook/
 ├── package.json           ← зависимости и команды
 │
 ├── gitbook/               ← как работать с этой книгой
-├── Backend/               ← PHP, PHP-FPM, Laravel
+├── Backend/               ← PHP, Go, Python, PHP-FPM, Laravel, Symfony, Yii
 │   ├── php/
-│   └── laravel/
+│   ├── go/
+│   ├── python/
+│   ├── laravel/
+│   ├── symfony/
+│   └── yii/
 ├── Android/               ← Android: Kotlin, Java, сборка, AOSP
 │   ├── kotlin/
 │   └── java/

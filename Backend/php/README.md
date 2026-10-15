@@ -32,11 +32,13 @@
 | [SOLID](SOLID/README.md) | Принципы + [примеры в Laravel](SOLID/laravel.md) |
 | [Паттерны проектирования](patterns/README.md) | Factory, Builder, Observer, Strategy и др. |
 
-## Фреймворк
+## Фреймворки
 
 | Раздел | Описание |
 |--------|----------|
 | [Laravel](../laravel/README.md) | Веб-фреймворк Laravel 13.x |
+| [Symfony](../symfony/README.md) | Фреймворк и компоненты, карта [официальной документации](https://symfony.com/doc) |
+| [Yii](../yii/README.md) | Фреймворк Yii 3, карта [официальной документации](https://yiisoft.github.io/docs/) |
 
 ## Требования
 
